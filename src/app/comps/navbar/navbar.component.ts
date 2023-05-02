@@ -17,4 +17,7 @@ setactive(route?: routeSpec) {
 }
   routes:routeSpec[] = NavBarRoutes;
   activeRouteIndex:number = -1;
+  constructor(){
+    console.log(this.routes)
+  }
 }

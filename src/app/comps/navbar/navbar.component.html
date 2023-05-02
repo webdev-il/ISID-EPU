@@ -10,7 +10,7 @@
         </div>
         <div *ngIf="routes[activeRouteIndex]===route&&route.children" class="dropdown-content">
             <div *ngFor="let childRoute of route.children" class="childRoute">
-                <a [href]="childRoute.route">
+                <a href="{{childRoute.route}}">
                     {{childRoute.label}}
                 </a>
             </div>
