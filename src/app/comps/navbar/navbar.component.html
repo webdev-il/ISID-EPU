@@ -1,7 +1,7 @@
 <div class="navbar">
     <div *ngFor="let route of routes" class="dropdown" (mouseover)="setactive(route)">
         <div class="dropbtn">
-            <a *ngIf="(route.children===undefined)" href="{{route.route}}">
+            <a *ngIf="(route.children===undefined)" [routerLink]="[route.route]">
                 {{route.label}}
             </a>
             <a *ngIf="(route.children!==undefined)">
@@ -10,7 +10,7 @@
         </div>
         <div *ngIf="routes[activeRouteIndex]===route&&route.children" class="dropdown-content">
             <div *ngFor="let childRoute of route.children" class="childRoute">
-                <a href="{{childRoute.route}}">
+                <a [routerLink]="[childRoute.route]">
                     {{childRoute.label}}
                 </a>
             </div>
