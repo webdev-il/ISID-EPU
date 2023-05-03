@@ -8,7 +8,8 @@ import { SitefooterComponent } from './comps/sitefooter/sitefooter.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { MsqepageComponent } from './pages/academics/msqepage/msqepage.component';
 import { SiteheaderComponent } from './comps/siteheader/siteheader.component';
-import { AboutUsPageComponent } from './comps/about-us-page/about-us-page.component';
+import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
+import { AnnouncementsPageComponent } from './pages/announcements-page/announcements-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutUsPageComponent } from './comps/about-us-page/about-us-page.compon
     HomepageComponent,
     MsqepageComponent,
     SiteheaderComponent,
-    AboutUsPageComponent
+    AboutUsPageComponent,
+    AnnouncementsPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 import { MsqepageComponent } from "src/app/pages/academics/msqepage/msqepage.component";
 import { routeSpec } from "./navigation";
-import { AboutUsPageComponent } from "src/app/comps/about-us-page/about-us-page.component";
+import { AboutUsPageComponent } from "src/app/pages/about-us-page/about-us-page.component";
+import { AnnouncementsPageComponent } from "src/app/pages/announcements-page/announcements-page.component";
 
 export interface homePageDataSpec{
     bannerLink:string;
@@ -9,7 +10,7 @@ export interface homePageDataSpec{
 export const HomePageRoutes:routeSpec[] = [
     {
         label:'Announcements',
-        component:MsqepageComponent,
+        component:AnnouncementsPageComponent,
         route:'home/announcements'
     },
     {
