@@ -10,6 +10,9 @@ import { MsqepageComponent } from './pages/academics/msqepage/msqepage.component
 import { SiteheaderComponent } from './comps/siteheader/siteheader.component';
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
 import { AnnouncementsPageComponent } from './pages/announcements-page/announcements-page.component';
+import { FlashboxComponent } from './comps/flashbox/flashbox.component';
+import { PlacementspageComponent } from './pages/placementspage/placementspage.component';
+import { ParaspecboxComponent } from './comps/paraspecbox/paraspecbox.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { AnnouncementsPageComponent } from './pages/announcements-page/announcem
     MsqepageComponent,
     SiteheaderComponent,
     AboutUsPageComponent,
-    AnnouncementsPageComponent
+    AnnouncementsPageComponent,
+    FlashboxComponent,
+    PlacementspageComponent,
+    ParaspecboxComponent
   ],
   imports: [
     BrowserModule,
