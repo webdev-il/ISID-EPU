@@ -11,6 +11,8 @@ import { SiteheaderComponent } from './comps/siteheader/siteheader.component';
 import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
 import { AnnouncementsPageComponent } from './pages/announcements-page/announcements-page.component';
 import { FlashboxComponent } from './comps/flashbox/flashbox.component';
+import { PlacementspageComponent } from './pages/placementspage/placementspage.component';
+import { ParaspecboxComponent } from './comps/paraspecbox/paraspecbox.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FlashboxComponent } from './comps/flashbox/flashbox.component';
     SiteheaderComponent,
     AboutUsPageComponent,
     AnnouncementsPageComponent,
-    FlashboxComponent
+    FlashboxComponent,
+    PlacementspageComponent,
+    ParaspecboxComponent
   ],
   imports: [
     BrowserModule,

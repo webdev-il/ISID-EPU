@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { paraSpec } from 'src/data/aboutuspage';
 
 @Component({
   selector: 'app-flashbox',
@@ -7,6 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class FlashboxComponent {
   @Input() title?:string;
-  @Input() body?:string;
-  @Input() paras?:string[];
+  @Input() paras?:paraSpec[];
 }
