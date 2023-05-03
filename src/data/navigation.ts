@@ -11,84 +11,84 @@ export interface routeSpec{
 }
 export const NavBarRoutes: routeSpec[] = [
     {
-        label:'Home',
-        route: '',
+        label:`Home`,
+        route: ``,
         component:HomepageComponent
     },
     {
-        label:'Academics',
+        label:`Academics`,
         children:[
             {
-                label:'MSQE',
-                route:'academics/msqe',
+                label:`MSQE`,
+                route:`academics/msqe`,
                 component:MsqepageComponent
             },
             {
-                label:'PhD program',
-                route:'academics/phd',
+                label:`PhD program`,
+                route:`academics/phd`,
                 component:HomepageComponent
             },
             {
-                label:'Courses',
-                route:'academics/courses',
+                label:`Courses`,
+                route:`academics/courses`,
                 component:HomepageComponent
 
             }
         ]
     },
     {
-        label:'People',
-        route:'people',
+        label:`People`,
+        route:`people`,
         component:HomepageComponent
 
         // children:[
         //     {
-        //         label:'faculty',
-        //         route:'',
+        //         label:`faculty`,
+        //         route:``,
         //     },
         //     {
-        //         label:'visitors',
-        //         route:''
+        //         label:`visitors`,
+        //         route:``
         //     },
         //     {
-        //         label:'PhD students',
-        //         route:''
+        //         label:`PhD students`,
+        //         route:``
         //     }
         // ]
     },
     {
-        label:'Research',
-        route:'research',
+        label:`Research`,
+        route:`research`,
         component:HomepageComponent
 
         // children:[
         //     {
-        //         label:'todo',
-        //         route:''
+        //         label:`todo`,
+        //         route:``
         //     }
         // ]
     },
     {
-        label:'Events',
-        route:'events',
+        label:`Events`,
+        route:`events`,
         component:HomepageComponent
 
         // children:[
         //     {
-        //         label:'todo',
-        //         route:''
+        //         label:`todo`,
+        //         route:``
         //     }
         // ]
     },
     {
-        label:'Research Centers',
-        route:'researchcenters',
+        label:`Research Centers`,
+        route:`researchcenters`,
         component:HomepageComponent
 
         // children:[
         //     {
-        //         label:'todo',
-        //         route:''
+        //         label:`todo`,
+        //         route:``
         //     }
         // ]
     }
@@ -113,12 +113,12 @@ function parseRouteSpec(routespec: routeSpec) {
     }
     else {
         if (routespec.children) {
-            let basePath = routespec.children[0].route!.split('/')[0];
+            let basePath = routespec.children[0].route!.split(`/`)[0];
             route = {
                 path: basePath,
                 children: routespec.children.map((childRouteSpec, index, value) => {
                     let childRoute: Route = {
-                        path: childRouteSpec.route?.split('/').slice(1, undefined).join('/'),
+                        path: childRouteSpec.route?.split(`/`).slice(1, undefined).join(`/`),
                         component: childRouteSpec.component
                     };
                     return childRoute;
