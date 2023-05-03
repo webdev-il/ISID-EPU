@@ -1,5 +1,10 @@
-:root{
+/* :root{
     --primary:#fc7087;
     --secondary:#333;
     --whitish:#ddd;
+} */
+:root{
+    --primary:#00356b;
+    --secondary:#286dc0;
+    --accent:#006ef5;
 }
