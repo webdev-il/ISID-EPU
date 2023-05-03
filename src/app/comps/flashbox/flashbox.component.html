@@ -1,0 +1,6 @@
+<div class="main">
+    <div class="title">{{title}}</div>
+    <div class="body" *ngIf="paras">
+        <p *ngFor="let para of paras" [innerHTML]="para"></p>
+    </div>
+</div>
