@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HomePageData, homePageDataSpec } from 'src/data/homepage';
 
 @Component({
   selector: 'app-homepage',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent {
-
+  data:homePageDataSpec = HomePageData;
 }
