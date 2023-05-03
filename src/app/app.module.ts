@@ -8,6 +8,7 @@ import { SitefooterComponent } from './comps/sitefooter/sitefooter.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { MsqepageComponent } from './pages/academics/msqepage/msqepage.component';
 import { SiteheaderComponent } from './comps/siteheader/siteheader.component';
+import { AboutUsPageComponent } from './comps/about-us-page/about-us-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SiteheaderComponent } from './comps/siteheader/siteheader.component';
     SitefooterComponent,
     HomepageComponent,
     MsqepageComponent,
-    SiteheaderComponent
+    SiteheaderComponent,
+    AboutUsPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 import { Routes,Route } from "@angular/router";
 import { MsqepageComponent } from "src/app/pages/academics/msqepage/msqepage.component";
 import { HomepageComponent } from "src/app/pages/homepage/homepage.component";
+import { HomePageRoutes } from "./homepage";
 
 export interface routeSpec{
     label:string;
@@ -92,32 +93,38 @@ export const NavBarRoutes: routeSpec[] = [
         // ]
     }
 ]
+
 export function parseRoutes(navbarroutes:routeSpec[]):Routes{
     const routes:Routes = navbarroutes.map((routespec,index,[])=>{
-        let route:Route = {};
-        if(routespec.component){
-            route = {
-                path:routespec.route,
-                component:routespec.component
-            }
-        }
-        else{
-            if(routespec.children){
-                let basePath = routespec.children[0].route!.split('/')[0]
-                route = {
-                    path:basePath,
-                    children:routespec.children.map((childRouteSpec,index,value)=>{
-                        let childRoute:Route = {
-                            path:childRouteSpec.route?.split('/').slice(1,undefined).join('/'),
-                            component:childRouteSpec.component
-                        };
-                        return childRoute;
-                    })
-                }
-            }
-        }
-        return route;
+        return parseRouteSpec(routespec);
     });
+    routes.push(...HomePageRoutes.map((routespec,index,[])=>parseRouteSpec(routespec)))
     console.log(routes)
     return routes;
+}
+
+function parseRouteSpec(routespec: routeSpec) {
+    let route: Route = {};
+    if (routespec.component) {
+        route = {
+            path: routespec.route,
+            component: routespec.component
+        };
+    }
+    else {
+        if (routespec.children) {
+            let basePath = routespec.children[0].route!.split('/')[0];
+            route = {
+                path: basePath,
+                children: routespec.children.map((childRouteSpec, index, value) => {
+                    let childRoute: Route = {
+                        path: childRouteSpec.route?.split('/').slice(1, undefined).join('/'),
+                        component: childRouteSpec.component
+                    };
+                    return childRoute;
+                })
+            };
+        }
+    }
+    return route;
 }
