@@ -1,0 +1,6 @@
+<div>
+    <p  *ngIf="para!.text" [innerHTML]="para!.text"></p>
+    <ul *ngIf="para!.list">
+        <li *ngFor="let item of para!.list" [innerHTML]="item"></li>
+    </ul>
+</div>

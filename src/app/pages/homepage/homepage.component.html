@@ -2,5 +2,6 @@
     <div class="links">
         <a *ngFor="let link of data.links" [routerLink]="[link.route]">{{link.label}}</a>
     </div>
+    <app-flashbox [title]="data.welcomebox.title" [paras]="[data.welcomebox.para]"></app-flashbox>
     <img src="{{data.bannerLink}}"/>
 </div>
