@@ -7,6 +7,7 @@ import { NavbarComponent } from './comps/navbar/navbar.component';
 import { SitefooterComponent } from './comps/sitefooter/sitefooter.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { MsqepageComponent } from './pages/academics/msqepage/msqepage.component';
+import { SiteheaderComponent } from './comps/siteheader/siteheader.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MsqepageComponent } from './pages/academics/msqepage/msqepage.component
     NavbarComponent,
     SitefooterComponent,
     HomepageComponent,
-    MsqepageComponent
+    MsqepageComponent,
+    SiteheaderComponent
   ],
   imports: [
     BrowserModule,

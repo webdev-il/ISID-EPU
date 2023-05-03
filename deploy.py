@@ -10,7 +10,3 @@ cachedirs = [
     ]
 for dirname in cachedirs:
     shutil.rmtree(dirname,ignore_errors=True)
-p = Popen(f'git branch -D {deploybranch}'.split(), stdin=PIPE, stdout=PIPE, stderr=PIPE)
-output,err = p.communicate()
-p = Popen(f'git checkout -b {deploybranch}'.split(), stdin=PIPE, stdout=PIPE, stderr=PIPE)
-output,err = p.communicate()
