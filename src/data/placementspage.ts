@@ -57,7 +57,7 @@ Our MSQE students get placed in industry in India and abroad. Some of the compan
             },
             {
                 list:[
-                    `Dipjyoti Majumdar. First placement: <strong>Post-doc, Center for Operations Research and Econometrics (CORE), Belgium</strong>. Current position: <strong>Faculty, Concordia University</strong>`
+                    `Dipjyoti Majumdar. <br>First placement: <strong>Post-doc, Center for Operations Research and Econometrics (CORE), Belgium</strong>.<br> Current position: <strong>Faculty, Concordia University</strong>`
                 ]
             }
         ]
