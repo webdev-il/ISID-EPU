@@ -13,6 +13,9 @@ import { AnnouncementsPageComponent } from './pages/announcements-page/announcem
 import { FlashboxComponent } from './comps/flashbox/flashbox.component';
 import { PlacementspageComponent } from './pages/placementspage/placementspage.component';
 import { ParaspecboxComponent } from './comps/paraspecbox/paraspecbox.component';
+import { ContactsPageComponent } from './pages/contacts-page/contacts-page.component';
+import { SafePipe } from './safe.pipe';
+import { PlaceholderComponent } from './pages/placeholder/placeholder.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { ParaspecboxComponent } from './comps/paraspecbox/paraspecbox.component'
     AnnouncementsPageComponent,
     FlashboxComponent,
     PlacementspageComponent,
-    ParaspecboxComponent
+    ParaspecboxComponent,
+    ContactsPageComponent,
+    SafePipe,
+    PlaceholderComponent
   ],
   imports: [
     BrowserModule,

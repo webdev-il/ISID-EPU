@@ -9,4 +9,7 @@ import { paraSpec } from 'src/data/aboutuspage';
 export class FlashboxComponent {
   @Input() title?:string;
   @Input() paras?:paraSpec[];
+  @Input() width?:string;
+  styleStr:string = '';
+  
 }

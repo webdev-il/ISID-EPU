@@ -1,5 +1,5 @@
 <div>
-    <p  *ngIf="para!.text" [innerHTML]="para!.text"></p>
+    <p  *ngIf="para!.text" [innerHTML]="para!.text|safe:'html'"></p>
     <ul *ngIf="para!.list">
         <li *ngFor="let item of para!.list" [innerHTML]="item"></li>
     </ul>
