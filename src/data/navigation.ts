@@ -2,6 +2,7 @@ import { Routes,Route } from "@angular/router";
 import { MsqepageComponent } from "src/app/pages/academics/msqepage/msqepage.component";
 import { HomepageComponent } from "src/app/pages/homepage/homepage.component";
 import { HomePageRoutes } from "./homepage";
+import { PlaceholderComponent } from "src/app/pages/placeholder/placeholder.component";
 
 export interface routeSpec{
     label:string;
@@ -26,12 +27,12 @@ export const NavBarRoutes: routeSpec[] = [
             {
                 label:`PhD program`,
                 route:`academics/phd`,
-                component:HomepageComponent
+                component:PlaceholderComponent
             },
             {
                 label:`Courses`,
                 route:`academics/courses`,
-                component:HomepageComponent
+                component:PlaceholderComponent
 
             }
         ]
@@ -39,7 +40,7 @@ export const NavBarRoutes: routeSpec[] = [
     {
         label:`People`,
         route:`people`,
-        component:HomepageComponent
+        component:PlaceholderComponent
 
         // children:[
         //     {
@@ -59,7 +60,7 @@ export const NavBarRoutes: routeSpec[] = [
     {
         label:`Research`,
         route:`research`,
-        component:HomepageComponent
+        component:PlaceholderComponent
 
         // children:[
         //     {
@@ -71,7 +72,7 @@ export const NavBarRoutes: routeSpec[] = [
     {
         label:`Events`,
         route:`events`,
-        component:HomepageComponent
+        component:PlaceholderComponent
 
         // children:[
         //     {
@@ -83,7 +84,7 @@ export const NavBarRoutes: routeSpec[] = [
     {
         label:`Research Centers`,
         route:`researchcenters`,
-        component:HomepageComponent
+        component:PlaceholderComponent
 
         // children:[
         //     {

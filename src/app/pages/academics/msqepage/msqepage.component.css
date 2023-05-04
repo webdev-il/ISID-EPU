@@ -1,0 +1,7 @@
+.title{
+    font-size: x-large;
+}
+.subtitle{
+    font-size: larger;
+    color: var(--secondary);
+}

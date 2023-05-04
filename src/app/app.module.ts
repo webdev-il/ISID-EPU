@@ -15,6 +15,7 @@ import { PlacementspageComponent } from './pages/placementspage/placementspage.c
 import { ParaspecboxComponent } from './comps/paraspecbox/paraspecbox.component';
 import { ContactsPageComponent } from './pages/contacts-page/contacts-page.component';
 import { SafePipe } from './safe.pipe';
+import { PlaceholderComponent } from './pages/placeholder/placeholder.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SafePipe } from './safe.pipe';
     PlacementspageComponent,
     ParaspecboxComponent,
     ContactsPageComponent,
-    SafePipe
+    SafePipe,
+    PlaceholderComponent
   ],
   imports: [
     BrowserModule,

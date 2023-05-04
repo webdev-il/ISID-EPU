@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MSQEPageData, msqePageSpecs } from 'src/data/msqepage';
 
 @Component({
   selector: 'app-msqepage',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./msqepage.component.css']
 })
 export class MsqepageComponent {
-
+  data:msqePageSpecs = MSQEPageData;
 }
