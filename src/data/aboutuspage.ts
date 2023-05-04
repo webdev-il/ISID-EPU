@@ -1,6 +1,9 @@
+import { routeSpec } from "./navigation";
+
 export interface paraSpec {
     text?: string;
     list?: string[];
+    internalLink?:routeSpec;
 }
 export interface textPageSpec {
     title: string;
