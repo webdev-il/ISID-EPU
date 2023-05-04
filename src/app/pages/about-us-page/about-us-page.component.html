@@ -1,4 +1,4 @@
 <div class="col">
     <p class="title">{{data.title}}</p>
-    <p class="para" *ngFor="let para of data.paragraphs" [innerHTML]="para.text"></p>
+    <app-paraspecbox *ngFor="let para of data.paragraphs" [para]="para"></app-paraspecbox>
 </div>

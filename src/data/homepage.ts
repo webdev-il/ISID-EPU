@@ -4,6 +4,7 @@ import { AboutUsPageComponent } from "src/app/pages/about-us-page/about-us-page.
 import { AnnouncementsPageComponent } from "src/app/pages/announcements-page/announcements-page.component";
 import { PlacementspageComponent } from "src/app/pages/placementspage/placementspage.component";
 import { paraSpec } from "./aboutuspage";
+import { ContactsPageComponent } from "src/app/pages/contacts-page/contacts-page.component";
 
 export interface homePageDataSpec{
     links:routeSpec[],
@@ -26,7 +27,7 @@ export const HomePageRoutes:routeSpec[] = [
     },
     {
         label:`Contact`,
-        component:MsqepageComponent,
+        component:ContactsPageComponent,
         route:`home/contact`
     },
     {
