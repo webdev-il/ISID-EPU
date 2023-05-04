@@ -3,6 +3,8 @@ import { MsqepageComponent } from "src/app/pages/academics/msqepage/msqepage.com
 import { HomepageComponent } from "src/app/pages/homepage/homepage.component";
 import { HomePageRoutes } from "./homepage";
 import { PlaceholderComponent } from "src/app/pages/placeholder/placeholder.component";
+import { PhdProgramPageComponent } from "src/app/pages/academics/phd-program-page/phd-program-page.component";
+import { miscRoutes } from "./miscroutes";
 
 export interface routeSpec{
     label:string;
@@ -27,7 +29,7 @@ export const NavBarRoutes: routeSpec[] = [
             {
                 label:`PhD program`,
                 route:`academics/phd`,
-                component:PlaceholderComponent
+                component:PhdProgramPageComponent
             },
             {
                 label:`Courses`,
@@ -100,6 +102,7 @@ export function parseRoutes(navbarroutes:routeSpec[]):Routes{
         return parseRouteSpec(routespec);
     });
     routes.push(...HomePageRoutes.map((routespec,index,[])=>parseRouteSpec(routespec)))
+    routes.push(...objectToVals(miscRoutes).map((routespec,index,[])=>parseRouteSpec(routespec)))
     console.log(routes)
     return routes;
 }
@@ -128,4 +131,8 @@ function parseRouteSpec(routespec: routeSpec) {
         }
     }
     return route;
+}
+
+export function objectToVals<T>(object:{[key:string]:T}):T[]{
+    return Object.keys(object).map((key,index,[])=>object[key]);
 }

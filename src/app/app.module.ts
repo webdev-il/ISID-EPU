@@ -16,6 +16,8 @@ import { ParaspecboxComponent } from './comps/paraspecbox/paraspecbox.component'
 import { ContactsPageComponent } from './pages/contacts-page/contacts-page.component';
 import { SafePipe } from './safe.pipe';
 import { PlaceholderComponent } from './pages/placeholder/placeholder.component';
+import { PhdProgramPageComponent } from './pages/academics/phd-program-page/phd-program-page.component';
+import { PastPhdStudentsComponent } from './pages/misc/past-phd-students/past-phd-students.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { PlaceholderComponent } from './pages/placeholder/placeholder.component'
     ParaspecboxComponent,
     ContactsPageComponent,
     SafePipe,
-    PlaceholderComponent
+    PlaceholderComponent,
+    PhdProgramPageComponent,
+    PastPhdStudentsComponent
   ],
   imports: [
     BrowserModule,
