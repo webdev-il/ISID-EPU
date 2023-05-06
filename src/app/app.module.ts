@@ -19,6 +19,8 @@ import { PhdProgramPageComponent } from './pages/academics/phd-program-page/phd-
 import { PastPhdStudentsComponent } from './pages/misc/past-phd-students/past-phd-students.component';
 import { CoursesPageComponent } from './pages/academics/courses-page/courses-page.component';
 import { VersatileboxComponent } from './comps/versatilebox/versatilebox.component';
+import { FacultyPageComponent } from './pages/people/faculty-page/faculty-page.component';
+import { PersonboxComponent } from './comps/personbox/personbox.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { VersatileboxComponent } from './comps/versatilebox/versatilebox.compone
     PhdProgramPageComponent,
     PastPhdStudentsComponent,
     CoursesPageComponent,
-    VersatileboxComponent
+    VersatileboxComponent,
+    FacultyPageComponent,
+    PersonboxComponent
   ],
   imports: [
     BrowserModule,
