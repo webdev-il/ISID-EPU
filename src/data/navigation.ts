@@ -5,6 +5,8 @@ import { HomePageRoutes } from "./homepage";
 import { PlaceholderComponent } from "src/app/pages/placeholder/placeholder.component";
 import { PhdProgramPageComponent } from "src/app/pages/academics/phd-program-page/phd-program-page.component";
 import { miscRoutes } from "./miscroutes";
+import { CoursesPageComponent } from "src/app/pages/academics/courses-page/courses-page.component";
+import { FacultyPageComponent } from "src/app/pages/people/faculty-page/faculty-page.component";
 
 export interface routeSpec{
     label:string;
@@ -34,30 +36,30 @@ export const NavBarRoutes: routeSpec[] = [
             {
                 label:`Courses`,
                 route:`academics/courses`,
-                component:PlaceholderComponent
+                component:CoursesPageComponent
 
             }
         ]
     },
     {
         label:`People`,
-        route:`people`,
-        component:PlaceholderComponent
-
-        // children:[
-        //     {
-        //         label:`faculty`,
-        //         route:``,
-        //     },
-        //     {
-        //         label:`visitors`,
-        //         route:``
-        //     },
-        //     {
-        //         label:`PhD students`,
-        //         route:``
-        //     }
-        // ]
+        children:[
+            {
+                label:`Faculty`,
+                route:`people/faculty`,
+                component:FacultyPageComponent
+            },
+            {
+                label:`Visitors`,
+                route:`people/visitors`,
+                component:PlaceholderComponent
+            },
+            {
+                label:`PhD Students`,
+                route:`people/phdstudents`,
+                component:PlaceholderComponent
+            }
+        ]
     },
     {
         label:`Research`,

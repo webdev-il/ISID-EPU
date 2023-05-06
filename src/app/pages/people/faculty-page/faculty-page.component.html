@@ -1,0 +1,11 @@
+<div class="main">
+    <p class="title">{{data.title}}</p>
+    <p class="subtitle">{{data.subtitleForProfs}}</p>
+    <div class="grid">
+        <app-personbox *ngFor="let prof of data.professors" [person]="prof" ></app-personbox>
+    </div>
+    <p class="subtitle">{{data.subtitleForStaff}}</p>
+    <div class="grid">
+        <app-personbox *ngFor="let staffmember of data.staff" [person]="staffmember"></app-personbox>
+    </div>
+</div>

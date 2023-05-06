@@ -1,0 +1,19 @@
+.title{
+    font-size: x-large;
+    text-align: center;
+}
+.subtitle{
+    font-size: larger;
+    color: var(--secondary);
+}
+.grid{
+    display: grid;
+}
+@media (min-width:1100px){
+    .grid{
+        grid-template-columns: 45% 45%;
+    }
+}
+app-personbox{
+    margin: 10px;
+}

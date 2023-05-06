@@ -1,0 +1,10 @@
+<div class="main" [ngStyle]="{width:(width?width:'')}">
+    <div class="text">
+        <img src="{{person.image}}" width="200" height="200">
+        <div class="title" [innerHTML]="person.name"></div>
+    </div>
+    <div class="body">
+        <app-paraspecbox [para]="{text:person.description}"></app-paraspecbox>
+    </div>
+</div>
+<!-- TODO: fix staff boxs. -->
