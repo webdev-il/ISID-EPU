@@ -1,0 +1,1 @@
+:root{--primary:#00356b;--secondary:#286dc0;--accent:#006ef5;--light:#7eb3f5;font-family:Arial,Helvetica,sans-serif}html,body{margin:0;padding:0;height:100%}a{text-decoration:none;color:var(--accent)}a:hover{color:var(--light)}a.button{border:3px solid var(--secondary);padding:5px;font-size:large;border-radius:5px}
