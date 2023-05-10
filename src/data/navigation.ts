@@ -7,6 +7,7 @@ import { PhdProgramPageComponent } from "src/app/pages/academics/phd-program-pag
 import { miscRoutes } from "./miscroutes";
 import { CoursesPageComponent } from "src/app/pages/academics/courses-page/courses-page.component";
 import { FacultyPageComponent } from "src/app/pages/people/faculty-page/faculty-page.component";
+import { VisitorspageComponent } from "src/app/pages/people/visitorspage/visitorspage.component";
 
 export interface routeSpec{
     label:string;
@@ -52,7 +53,7 @@ export const NavBarRoutes: routeSpec[] = [
             {
                 label:`Visitors`,
                 route:`people/visitors`,
-                component:PlaceholderComponent
+                component:VisitorspageComponent
             },
             {
                 label:`PhD Students`,
@@ -63,46 +64,65 @@ export const NavBarRoutes: routeSpec[] = [
     },
     {
         label:`Research`,
-        route:`research`,
-        component:PlaceholderComponent
-
-        // children:[
-        //     {
-        //         label:`todo`,
-        //         route:``
-        //     }
-        // ]
+        children:[
+            {
+                label:`Discussion Papers`,
+                route:`https://ideas.repec.org/s/alo/isipdp.html`
+            },
+            {
+                label:`Highlights`,
+                route:'https://ideas.repec.org/s/alo/isipdp.html',
+            }
+        ]
     },
     {
         label:`Events`,
         route:`events`,
-        component:PlaceholderComponent
-
-        // children:[
-        //     {
-        //         label:`todo`,
-        //         route:``
-        //     }
-        // ]
+        children:[
+            {
+                label:`Seminars`,
+                route:`events/seminars`,
+                component:PlaceholderComponent
+            },
+            {
+                label:`ACEGD`,
+                route:`events/ACEGD`,
+                component:PlaceholderComponent
+            },
+            {
+                label:`Workshops`,
+                route:`events/workshops`,
+                component:PlaceholderComponent
+            }
+        ]
     },
     {
         label:`Research Centers`,
-        route:`researchcenters`,
-        component:PlaceholderComponent
-
-        // children:[
-        //     {
-        //         label:`todo`,
-        //         route:``
-        //     }
-        // ]
+        children:[
+            {
+                label:`PPRU`,
+                route:`https://sites.google.com/site/ppruisid/`
+            },
+            {
+                label:`CECFEE`,
+                route:`http://www.isid.ac.in/~cecfee`
+            },
+            {
+                label:`IWWAGE-ISI`,
+                route:`https://iwwage.isid.ac.in/`
+            },
+            {
+                label:`IGC-India`,
+                route:`http://www.theigc.org/countries/india-central`
+            }
+        ]
     }
 ]
 
 export function parseRoutes(navbarroutes:routeSpec[]):Routes{
     const routes:Routes = navbarroutes.map((routespec,index,[])=>{
         return parseRouteSpec(routespec);
-    });
+    }).filter((route,index,[])=>Object.keys(route).length!==0);
     routes.push(...HomePageRoutes.map((routespec,index,[])=>parseRouteSpec(routespec)))
     routes.push(...objectToVals(miscRoutes).map((routespec,index,[])=>parseRouteSpec(routespec)))
     console.log(routes)
@@ -123,12 +143,15 @@ function parseRouteSpec(routespec: routeSpec) {
             route = {
                 path: basePath,
                 children: routespec.children.map((childRouteSpec, index, value) => {
+                    if(childRouteSpec.route?.startsWith('http')){
+                        return {};
+                    }
                     let childRoute: Route = {
                         path: childRouteSpec.route?.split(`/`).slice(1, undefined).join(`/`),
                         component: childRouteSpec.component
                     };
                     return childRoute;
-                })
+                }).filter((route,index,[])=>Object.keys(route).length!==0)
             };
         }
     }

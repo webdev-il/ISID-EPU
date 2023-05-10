@@ -21,6 +21,7 @@ import { CoursesPageComponent } from './pages/academics/courses-page/courses-pag
 import { VersatileboxComponent } from './comps/versatilebox/versatilebox.component';
 import { FacultyPageComponent } from './pages/people/faculty-page/faculty-page.component';
 import { PersonboxComponent } from './comps/personbox/personbox.component';
+import { VisitorspageComponent } from './pages/people/visitorspage/visitorspage.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { PersonboxComponent } from './comps/personbox/personbox.component';
     CoursesPageComponent,
     VersatileboxComponent,
     FacultyPageComponent,
-    PersonboxComponent
+    PersonboxComponent,
+    VisitorspageComponent
   ],
   imports: [
     BrowserModule,
