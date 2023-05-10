@@ -24,6 +24,7 @@ import { PersonboxComponent } from './comps/personbox/personbox.component';
 import { VisitorspageComponent } from './pages/people/visitorspage/visitorspage.component';
 import { AcegdPageComponent } from './pages/events/acegd-page/acegd-page.component';
 import { WorkshopsPageComponent } from './pages/events/workshops-page/workshops-page.component';
+import { SeminarPageComponent } from './pages/events/seminar-page/seminar-page.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { WorkshopsPageComponent } from './pages/events/workshops-page/workshops-
     PersonboxComponent,
     VisitorspageComponent,
     AcegdPageComponent,
-    WorkshopsPageComponent
+    WorkshopsPageComponent,
+    SeminarPageComponent
   ],
   imports: [
     BrowserModule,

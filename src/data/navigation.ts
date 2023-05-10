@@ -10,6 +10,7 @@ import { FacultyPageComponent } from "src/app/pages/people/faculty-page/faculty-
 import { VisitorspageComponent } from "src/app/pages/people/visitorspage/visitorspage.component";
 import { AcegdPageComponent } from "src/app/pages/events/acegd-page/acegd-page.component";
 import { WorkshopsPageComponent } from "src/app/pages/events/workshops-page/workshops-page.component";
+import { SeminarPageComponent } from "src/app/pages/events/seminar-page/seminar-page.component";
 
 export interface routeSpec{
     label:string;
@@ -84,7 +85,7 @@ export const NavBarRoutes: routeSpec[] = [
             {
                 label:`Seminars`,
                 route:`events/seminars`,
-                component:PlaceholderComponent
+                component:SeminarPageComponent
             },
             {
                 label:`ACEGD`,

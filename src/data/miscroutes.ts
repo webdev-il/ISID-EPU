@@ -1,3 +1,4 @@
+import { PlaceholderComponent } from "src/app/pages/placeholder/placeholder.component";
 import { routeSpec } from "./navigation";
 import { PastPhdStudentsComponent } from "src/app/pages/misc/past-phd-students/past-phd-students.component";
 
@@ -7,5 +8,10 @@ export const miscRoutes:{[key:string]:routeSpec} = {
         component:PastPhdStudentsComponent,
         label:'Past Phd Students'
     },
+    pastSeminars:{
+        route:`misc/pastseminars`,
+        component:PlaceholderComponent,
+        label:`Past Seminars`
+    }
 
 }
