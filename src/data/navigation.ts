@@ -8,6 +8,8 @@ import { miscRoutes } from "./miscroutes";
 import { CoursesPageComponent } from "src/app/pages/academics/courses-page/courses-page.component";
 import { FacultyPageComponent } from "src/app/pages/people/faculty-page/faculty-page.component";
 import { VisitorspageComponent } from "src/app/pages/people/visitorspage/visitorspage.component";
+import { AcegdPageComponent } from "src/app/pages/events/acegd-page/acegd-page.component";
+import { WorkshopsPageComponent } from "src/app/pages/events/workshops-page/workshops-page.component";
 
 export interface routeSpec{
     label:string;
@@ -87,12 +89,12 @@ export const NavBarRoutes: routeSpec[] = [
             {
                 label:`ACEGD`,
                 route:`events/ACEGD`,
-                component:PlaceholderComponent
+                component:AcegdPageComponent
             },
             {
                 label:`Workshops`,
                 route:`events/workshops`,
-                component:PlaceholderComponent
+                component:WorkshopsPageComponent
             }
         ]
     },

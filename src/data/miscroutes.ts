@@ -6,5 +6,6 @@ export const miscRoutes:{[key:string]:routeSpec} = {
         route:'misc/pastphdstudents',
         component:PastPhdStudentsComponent,
         label:'Past Phd Students'
-    }
+    },
+
 }

@@ -22,6 +22,8 @@ import { VersatileboxComponent } from './comps/versatilebox/versatilebox.compone
 import { FacultyPageComponent } from './pages/people/faculty-page/faculty-page.component';
 import { PersonboxComponent } from './comps/personbox/personbox.component';
 import { VisitorspageComponent } from './pages/people/visitorspage/visitorspage.component';
+import { AcegdPageComponent } from './pages/events/acegd-page/acegd-page.component';
+import { WorkshopsPageComponent } from './pages/events/workshops-page/workshops-page.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { VisitorspageComponent } from './pages/people/visitorspage/visitorspage.
     VersatileboxComponent,
     FacultyPageComponent,
     PersonboxComponent,
-    VisitorspageComponent
+    VisitorspageComponent,
+    AcegdPageComponent,
+    WorkshopsPageComponent
   ],
   imports: [
     BrowserModule,
