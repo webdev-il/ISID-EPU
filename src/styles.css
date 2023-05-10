@@ -22,3 +22,9 @@ a{
 a:hover{
     color: var(--light);
 }
+a.button{
+    border: 3px solid var(--secondary);
+    padding: 5px;
+    font-size: large;
+    border-radius: 5px;
+}

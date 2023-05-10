@@ -21,6 +21,13 @@ import { CoursesPageComponent } from './pages/academics/courses-page/courses-pag
 import { VersatileboxComponent } from './comps/versatilebox/versatilebox.component';
 import { FacultyPageComponent } from './pages/people/faculty-page/faculty-page.component';
 import { PersonboxComponent } from './comps/personbox/personbox.component';
+import { VisitorspageComponent } from './pages/people/visitorspage/visitorspage.component';
+import { AcegdPageComponent } from './pages/events/acegd-page/acegd-page.component';
+import { WorkshopsPageComponent } from './pages/events/workshops-page/workshops-page.component';
+import { SeminarPageComponent } from './pages/events/seminar-page/seminar-page.component';
+import { PastSeminarsPageComponent } from './pages/misc/past-seminars-page/past-seminars-page.component';
+import { PhdStudentsPageComponent } from './pages/people/phd-students-page/phd-students-page.component';
+import { StudentboxComponent } from './comps/studentbox/studentbox.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +50,14 @@ import { PersonboxComponent } from './comps/personbox/personbox.component';
     CoursesPageComponent,
     VersatileboxComponent,
     FacultyPageComponent,
-    PersonboxComponent
+    PersonboxComponent,
+    VisitorspageComponent,
+    AcegdPageComponent,
+    WorkshopsPageComponent,
+    SeminarPageComponent,
+    PastSeminarsPageComponent,
+    PhdStudentsPageComponent,
+    StudentboxComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,9 @@
 <div class="main" [ngStyle]="{width:(width?width:'')}">
     <div class="text">
-        <img src="{{person.image}}" width="200" height="200">
+        <a *ngIf="person.imageLink" href="{{person.imageLink}}">
+            <img src="{{person.image}}" width="200" height="200">
+        </a>
+        <img *ngIf="!person.imageLink" src="{{person.image}}" width="200" height="200">
         <div class="title" [innerHTML]="person.name"></div>
     </div>
     <div class="body">

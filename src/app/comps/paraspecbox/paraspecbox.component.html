@@ -1,6 +1,6 @@
 <div>
     <p  *ngIf="para!.text" [innerHTML]="para!.text|safe:'html'"></p>
-    <a *ngIf="para!.internalLink" [routerLink]="[(para!.internalLink.route!.startsWith('misc')?'/'+para!.internalLink.route:para!.internalLink.route)]" [innerHTML]="para!.internalLink.label"></a>
+    <a *ngIf="para!.internalLink" class="button" [routerLink]="[(para!.internalLink.route!.startsWith('misc')?'/'+para!.internalLink.route:para!.internalLink.route)]" [innerHTML]="para!.internalLink.label"></a>
     <ul *ngIf="para!.list">
         <li *ngFor="let item of para!.list" [innerHTML]="item"></li>
     </ul>
