@@ -9,8 +9,8 @@ export const PastSeminarsData: pastSeminarsSpec = {
     title: `Past Seminars`,
     paragraphs: [
         {
-            text: `Please register for these seminar in order to receive invitations, by filling out the form here:
-            <a href="https://forms.gle/prEBGTYj5Ctdzd2i9">click</a>. For questions, please contact our seminar coordinator <strong> Debasis Mishra</strong>
+            text: `Please register for these seminar in order to receive invitations, by filling out the form <a href="https://forms.gle/prEBGTYj5Ctdzd2i9">here</a>.<br>
+            For questions, please contact our seminar coordinator <strong> Debasis Mishra</strong>
             at <em>dmishra [at] isid.ac.in</em>. <br>
             Some of our seminars are recorded. The links are provided below. You can also check our youtube channel:`
         }

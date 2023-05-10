@@ -11,6 +11,7 @@ import { VisitorspageComponent } from "src/app/pages/people/visitorspage/visitor
 import { AcegdPageComponent } from "src/app/pages/events/acegd-page/acegd-page.component";
 import { WorkshopsPageComponent } from "src/app/pages/events/workshops-page/workshops-page.component";
 import { SeminarPageComponent } from "src/app/pages/events/seminar-page/seminar-page.component";
+import { PhdStudentsPageComponent } from "src/app/pages/people/phd-students-page/phd-students-page.component";
 
 export interface routeSpec{
     label:string;
@@ -61,7 +62,7 @@ export const NavBarRoutes: routeSpec[] = [
             {
                 label:`PhD Students`,
                 route:`people/phdstudents`,
-                component:PlaceholderComponent
+                component:PhdStudentsPageComponent
             }
         ]
     },

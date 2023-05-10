@@ -26,6 +26,8 @@ import { AcegdPageComponent } from './pages/events/acegd-page/acegd-page.compone
 import { WorkshopsPageComponent } from './pages/events/workshops-page/workshops-page.component';
 import { SeminarPageComponent } from './pages/events/seminar-page/seminar-page.component';
 import { PastSeminarsPageComponent } from './pages/misc/past-seminars-page/past-seminars-page.component';
+import { PhdStudentsPageComponent } from './pages/people/phd-students-page/phd-students-page.component';
+import { StudentboxComponent } from './comps/studentbox/studentbox.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { PastSeminarsPageComponent } from './pages/misc/past-seminars-page/past-
     AcegdPageComponent,
     WorkshopsPageComponent,
     SeminarPageComponent,
-    PastSeminarsPageComponent
+    PastSeminarsPageComponent,
+    PhdStudentsPageComponent,
+    StudentboxComponent
   ],
   imports: [
     BrowserModule,
