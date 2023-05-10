@@ -1,0 +1,5 @@
+<div>
+    <p class="title">{{data.title}}</p>
+    <app-paraspecbox *ngFor="let para of data.paragraphs" [para]="para"></app-paraspecbox>
+    <app-flashbox *ngFor="let ps of data.pastSeminars" [title]="ps.title" [paras]="[{text:ps.description}]"></app-flashbox>
+</div>
