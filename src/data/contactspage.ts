@@ -2,11 +2,12 @@ import { textPageSpec } from "./aboutuspage";
 
 export interface contactsPageSpec {
     title: string;
-    details: textPageSpec[]
+    pointsOfContact: textPageSpec[];
+    address:textPageSpec[];
 }
 export const ContactsPageData: contactsPageSpec = {
     title: `Contacts`,
-    details: [
+    pointsOfContact: [
         {
             title: `Head, Economics and Planning Unit: <strong>Abhiroop Mukhopadhyay</strong>`,
             paragraphs: [
@@ -49,6 +50,8 @@ export const ContactsPageData: contactsPageSpec = {
                 Fax: +91 - 11 - 4149 3981` }
             ]
         },
+    ],
+    address:[
         {
             title: `Address`,
             paragraphs: [
@@ -70,6 +73,6 @@ export const ContactsPageData: contactsPageSpec = {
                     <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.4755881695387!2d77.185499!3d28.53956935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1dfa88aca091%3A0xc0aceb27f695e1d8!2sISI+Delhi%2C+New+Delhi%2C+Delhi%2C+India!5e1!3m2!1sen!2s!4v1389372327376" height="450" width="100%" frameborder="0"></iframe>`
                 }
             ]
-        },
+        }
     ]
 };

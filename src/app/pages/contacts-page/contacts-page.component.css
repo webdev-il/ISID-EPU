@@ -5,9 +5,21 @@
     display: block;
     flex-direction: column;
 }
-.details{
+.pocs{
     display: grid;
-    grid-template-columns: 45% 45%;
+}
+.address{
+    display: grid;
+    align-items: center;
+}
+
+@media (min-width:750px){
+    .pocs{
+        grid-template-columns: 45% 45%;
+    }
+    .address{
+        grid-template-columns: 45% 45%;
+    }
 }
 app-flashbox{
     margin: 10px;

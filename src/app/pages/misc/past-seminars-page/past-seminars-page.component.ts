@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PastSeminarsData, pastSeminarsSpec } from 'src/data/pastseminarspage';
+import { PastSeminarsData, pastSeminarsSpec, seminarSpec } from 'src/data/pastseminarspage';
 
 @Component({
   selector: 'app-past-seminars-page',
@@ -7,5 +7,13 @@ import { PastSeminarsData, pastSeminarsSpec } from 'src/data/pastseminarspage';
   styleUrls: ['./past-seminars-page.component.css']
 })
 export class PastSeminarsPageComponent {
-  data:pastSeminarsSpec = PastSeminarsData;
+  data: pastSeminarsSpec = PastSeminarsData;
+  query: string = '';
+  getQueryResults():seminarSpec[]{
+    return this.data.pastSeminars.filter((seminar) => (
+      seminar.title.toLowerCase().includes(this.query.toLowerCase())
+      ||
+      seminar.description.toLowerCase().includes(this.query.toLowerCase())
+      ))
+  }
 }
