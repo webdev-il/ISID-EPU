@@ -1,5 +1,5 @@
-<div class="navbar">
-    <div *ngFor="let route of routes" class="dropdown" (mouseover)="setactive(route)">
+<div class="desktop-navbar navbar">
+    <div class="dropdown" *ngFor="let route of routes" (mouseover)="setactiveDesktop(route)">
         <div class="dropbtn">
             <a *ngIf="(route.children===undefined)" [routerLink]="[route.route]">
                 {{route.label}}
@@ -8,7 +8,32 @@
                 {{route.label}}
             </a>
         </div>
-        <div *ngIf="routes[activeRouteIndex]===route&&route.children" class="dropdown-content">
+        <div *ngIf="routes[activeRouteIndex]===route&&route.children" class="dropdown-content desktop">
+            <div *ngFor="let childRoute of route.children" class="childRoute">
+                <a *ngIf="!childRoute.route?.startsWith('http')" [routerLink]="[childRoute.route]">
+                    {{childRoute.label}}
+                </a>
+                <a *ngIf="childRoute.route?.startsWith('http')" href="{{childRoute.route}}">
+                    {{childRoute.label}}
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="mobile-navbar navbar">
+    <div class="dropdown" *ngFor="let route of routes">
+        <div class="dropbtn">
+            <a *ngIf="(route.children===undefined)" [routerLink]="[route.route]">
+                {{route.label}}
+            </a>
+            <div class="routeWithChildren" *ngIf="(route.children!==undefined)" (click)="setactive(route)">
+                <a>
+                    {{route.label}}
+                </a>
+                <i style="color:grey" class="fa fa-sort-down"></i>
+            </div>
+        </div>
+        <div *ngIf="routes[activeRouteIndex]===route&&route.children" class="dropdown-content mobile">
             <div *ngFor="let childRoute of route.children" class="childRoute">
                 <a *ngIf="!childRoute.route?.startsWith('http')" [routerLink]="[childRoute.route]">
                     {{childRoute.label}}

@@ -7,9 +7,23 @@ import { NavBarRoutes, routeSpec } from 'src/data/navigation';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-setactive(route?: routeSpec) {
+  setactiveDesktop(route?:routeSpec){
+    if(route){
+     
+        this.activeRouteIndex = this.routes.indexOf(route);
+    }
+    else{
+      this.activeRouteIndex = -1;
+    }  
+  }
+  setactive(route?: routeSpec) {
   if(route){
-    this.activeRouteIndex = this.routes.indexOf(route);
+    if(this.activeRouteIndex===this.routes.indexOf(route)){
+      this.activeRouteIndex = -1
+    }
+    else{
+      this.activeRouteIndex = this.routes.indexOf(route);
+    }
   }
   else{
     this.activeRouteIndex = -1;
