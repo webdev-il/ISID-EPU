@@ -28,4 +28,12 @@ export class PastPhdStudentsComponent implements OnInit{
       }
     });
   }
+  query: string = '';
+  getQueryResults():PastPhdStudent[]{
+    return this.data.students.filter((student) => (
+      student.name.toLowerCase().includes(this.query.toLowerCase())
+      ||
+      student.description.toLowerCase().includes(this.query.toLowerCase())
+      ))
+  }
 }

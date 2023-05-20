@@ -3,13 +3,15 @@ import { paraSpec } from "./aboutuspage";
 import { routeSpec } from "./navigation";
 import { miscRoutes } from "./miscroutes";
 
+export interface FAQinfo {
+    question: string;
+    answer: paraSpec[];
+}
+
 export interface phdProgramSpecs {
     title: string;
     paragraphs: paraSpec[];
-    faqs: {
-        question: string;
-        answer: paraSpec[];
-    }[];
+    faqs: FAQinfo[];
 }
 
 export const PhdPageData: phdProgramSpecs = {

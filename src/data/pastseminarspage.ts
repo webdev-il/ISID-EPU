@@ -1,9 +1,12 @@
 import { paraSpec } from "./aboutuspage";
-
+export interface seminarSpec{
+    title:string;
+    description:string;
+}
 export interface pastSeminarsSpec {
     title: string;
     paragraphs: paraSpec[],
-    pastSeminars: any[]
+    pastSeminars: seminarSpec[]
 }
 export const PastSeminarsData: pastSeminarsSpec = {
     title: `Past Seminars`,
@@ -19,9 +22,9 @@ export const PastSeminarsData: pastSeminarsSpec = {
         {
             title: `<b>Forest clearing and fatal human elephant conflict in India</b> `,
             description: `
-Speaker: <b>Sumeet Gulati, University of British Columbia</b><br>
-Date: <b> 28 April 2023 </b><br>
-Venue: <b> Zoom </b><br>`
+            Speaker: <b>Sumeet Gulati, University of British Columbia</b><br>
+            Date: <b> 28 April 2023 </b><br>
+            Venue: <b> Zoom </b><br>`
         },
         {
             title: ` <b>A Division of Laborers: Identity and Efficiency in India</b> `,

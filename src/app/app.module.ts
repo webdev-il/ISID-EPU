@@ -28,6 +28,7 @@ import { SeminarPageComponent } from './pages/events/seminar-page/seminar-page.c
 import { PastSeminarsPageComponent } from './pages/misc/past-seminars-page/past-seminars-page.component';
 import { PhdStudentsPageComponent } from './pages/people/phd-students-page/phd-students-page.component';
 import { StudentboxComponent } from './comps/studentbox/studentbox.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { StudentboxComponent } from './comps/studentbox/studentbox.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
