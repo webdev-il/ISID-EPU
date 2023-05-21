@@ -23,9 +23,11 @@
 <div class="mobile-navbar navbar">
     <div class="dropdown" *ngFor="let route of routes">
         <div class="dropbtn">
-            <a *ngIf="(route.children===undefined)" [routerLink]="[route.route]">
-                {{route.label}}
-            </a>
+            <!-- <div> -->
+                <a *ngIf="(route.children===undefined)" [routerLink]="[route.route]">
+                    {{route.label}}
+                </a>
+            <!-- </div> -->
             <div class="routeWithChildren" *ngIf="(route.children!==undefined)" (click)="setactive(route)">
                 <a>
                     {{route.label}}

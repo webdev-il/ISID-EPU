@@ -8,11 +8,14 @@
 }
 .mobile-navbar{
   flex-direction: column;
+  border-top: 3px var(--secondary) solid;
 }
 
 .navbar a {
   color: black;
-  text-align: center;
+  text-align: left;
+  padding: 14px 16px;
+  display: block;
   text-decoration: none;
 }
 
@@ -25,7 +28,7 @@
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
   background-color: inherit;
 }
 .desktop .childRoute{
@@ -96,4 +99,5 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
