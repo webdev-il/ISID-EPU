@@ -10,7 +10,7 @@
         </div>
         <div *ngIf="routes[activeRouteIndex]===route&&route.children" class="dropdown-content desktop">
             <div *ngFor="let childRoute of route.children" class="childRoute">
-                <a *ngIf="!childRoute.route?.startsWith('http')" [routerLink]="[childRoute.route]">
+                <a *ngIf="!childRoute.route?.startsWith('http')" [routerLink]="[childRoute.route]" (click)="clearActive()">
                     {{childRoute.label}}
                 </a>
                 <a *ngIf="childRoute.route?.startsWith('http')" href="{{childRoute.route}}">
@@ -35,7 +35,7 @@
         </div>
         <div *ngIf="routes[activeRouteIndex]===route&&route.children" class="dropdown-content mobile">
             <div *ngFor="let childRoute of route.children" class="childRoute">
-                <a *ngIf="!childRoute.route?.startsWith('http')" [routerLink]="[childRoute.route]">
+                <a *ngIf="!childRoute.route?.startsWith('http')" [routerLink]="[childRoute.route]" (click)="clearActive()">
                     {{childRoute.label}}
                 </a>
                 <a *ngIf="childRoute.route?.startsWith('http')" href="{{childRoute.route}}">
