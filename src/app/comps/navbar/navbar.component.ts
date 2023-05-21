@@ -34,4 +34,11 @@ export class NavbarComponent {
   constructor(){
     console.log(this.routes)
   }
+  clearActive(){
+    this.activeRouteIndex = -1
+    window.scrollBy({
+      top:200,
+      behavior:'smooth'
+    })
+  }
 }
