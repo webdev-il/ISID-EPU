@@ -57,3 +57,7 @@ hr.mobile{
         display: none;
     }
 }
+a,a:hover{
+    text-decoration: none;
+    color: black;
+}

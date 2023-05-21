@@ -12,6 +12,7 @@ import { AcegdPageComponent } from "src/app/pages/events/acegd-page/acegd-page.c
 import { WorkshopsPageComponent } from "src/app/pages/events/workshops-page/workshops-page.component";
 import { SeminarPageComponent } from "src/app/pages/events/seminar-page/seminar-page.component";
 import { PhdStudentsPageComponent } from "src/app/pages/people/phd-students-page/phd-students-page.component";
+import { otherRoutes } from "./otherspage";
 
 export interface routeSpec{
     label:string;
@@ -129,7 +130,7 @@ export function parseRoutes(navbarroutes:routeSpec[]):Routes{
     }).filter((route,index,[])=>Object.keys(route).length!==0);
     routes.push(...HomePageRoutes.map((routespec,index,[])=>parseRouteSpec(routespec)))
     routes.push(...objectToVals(miscRoutes).map((routespec,index,[])=>parseRouteSpec(routespec)))
-    console.log(routes)
+    routes.push(...(otherRoutes).map((routespec,index,[])=>parseRouteSpec(routespec)))
     return routes;
 }
 

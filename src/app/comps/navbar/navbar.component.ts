@@ -32,7 +32,6 @@ export class NavbarComponent {
   routes:routeSpec[] = NavBarRoutes;
   activeRouteIndex:number = -1;
   constructor(){
-    console.log(this.routes)
   }
   clearActive(){
     this.activeRouteIndex = -1
