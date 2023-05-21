@@ -18,5 +18,5 @@
     margin-bottom: 10px;
     padding: 10px;
     border: 3px solid var(--primary);
-    overflow: scroll;
+    overflow: auto;
 }
