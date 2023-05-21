@@ -1,8 +1,9 @@
 import { PlaceholderComponent } from "src/app/pages/placeholder/placeholder.component";
-import { routeSpec } from "./navigation";
+import { objectToVals, routeSpec } from "./navigation";
 import { PastPhdStudentsComponent } from "src/app/pages/misc/past-phd-students/past-phd-students.component";
 import { PastSeminarsPageComponent } from "src/app/pages/misc/past-seminars-page/past-seminars-page.component";
-
+import { othersData } from "./otherspage";
+import { OthersPageComponent } from "src/app/pages/misc/others-page/others-page.component";
 export const miscRoutes:{[key:string]:routeSpec} = {
     pastPhdStudents:{
         route:'misc/pastphdstudents',
@@ -13,6 +14,6 @@ export const miscRoutes:{[key:string]:routeSpec} = {
         route:`misc/pastseminars`,
         component:PastSeminarsPageComponent,
         label:`Past Seminars`
-    }
-
+    },
+    // ...miscOthersRoutes
 }

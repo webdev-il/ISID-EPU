@@ -29,6 +29,7 @@ import { PastSeminarsPageComponent } from './pages/misc/past-seminars-page/past-
 import { PhdStudentsPageComponent } from './pages/people/phd-students-page/phd-students-page.component';
 import { StudentboxComponent } from './comps/studentbox/studentbox.component';
 import { FormsModule } from '@angular/forms';
+import { OthersPageComponent } from './pages/misc/others-page/others-page.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { FormsModule } from '@angular/forms';
     SeminarPageComponent,
     PastSeminarsPageComponent,
     PhdStudentsPageComponent,
-    StudentboxComponent
+    StudentboxComponent,
+    OthersPageComponent
   ],
   imports: [
     BrowserModule,
