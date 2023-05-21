@@ -10,5 +10,4 @@ export class StudentboxComponent {
   @Input() person!:PersonSpec;
   @Input() width?:string;
   styleStr:string = '';
-  
 }

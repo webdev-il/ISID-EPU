@@ -17,3 +17,18 @@
 app-personbox{
     margin: 10px;
 }
+
+.desktop{
+    display: none;
+}
+.mobile{
+    display: block;
+}
+@media(min-width:650px){
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+}

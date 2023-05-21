@@ -29,16 +29,14 @@ export const PastSeminarsData: pastSeminarsSpec = {
         {
             title: ` <b>A Division of Laborers: Identity and Efficiency in India</b> `,
             description: `
-Speaker: <b>Daniel Keniston, Lousiana State University</b><br>
-Date: <b> 21 April 2023</b><br>
-Venue: <b> Zoom </b><br>
-
-`
+            Speaker: <b>Daniel Keniston, Lousiana State University</b><br>
+            Date: <b> 21 April 2023</b><br>
+            Venue: <b> Zoom </b><br>
+            `
         },
         {
             title: ` <b>Does reshaping gender attitudes impact women's long term outcomes? Evidence from a school-based experiment</b> `,
             description: `
-
 Speaker: <b>Tarun Jain, IIM Ahmedabad</b><br>
 Date: <b> 17 March 2023 </b><br>
 Venue: <b> Seminar Room </b><br>
