@@ -1,7 +1,4 @@
-.title{
-    font-size: x-large;
-    text-align: center;
-}
+
 .titlebar{
     display: flex;
     flex-direction: row;

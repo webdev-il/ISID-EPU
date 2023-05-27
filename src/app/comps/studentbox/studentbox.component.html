@@ -3,6 +3,6 @@
         <img src="{{person.image}}" width="250" height="250">
     </a>
     <img *ngIf="!person.imageLink" src="{{person.image}}" width="250" height="250">
-    <div class="title" [innerHTML]="person.name"></div>
+    <div class="student-title" [innerHTML]="person.name"></div>
     <div class="body" [innerHTML]="person.description"></div>
 </div>

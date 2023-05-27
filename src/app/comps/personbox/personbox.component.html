@@ -4,7 +4,7 @@
             <img src="{{person.image}}" width="200" height="200">
         </a>
         <img *ngIf="!person.imageLink" src="{{person.image}}" width="200" height="200">
-        <div class="title" [innerHTML]="person.name"></div>
+        <div class="person-title" [innerHTML]="person.name"></div>
     </div>
     <div class="body">
         <app-paraspecbox [para]="{text:person.description}"></app-paraspecbox>

@@ -1,8 +1,3 @@
-/* :root{
-    --primary:#fc7087;
-    --secondary:#333;
-    --whitish:#ddd;
-} */
 :root{
     --primary:#00356b;
     --secondary:#286dc0;
@@ -28,4 +23,28 @@ a.button{
     padding: 5px;
     font-size: large;
     border-radius: 5px;
+}
+.title{
+    font-size: x-large;
+    text-align: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.desktop{
+    display: none;
+}
+@media(min-width:700px){
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
 }

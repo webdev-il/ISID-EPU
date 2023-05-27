@@ -1,13 +1,8 @@
 .col{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     margin-top: 10px;
     margin-right: 10px;
 }
 .row{
-    display: flex;
-    flex-direction: row;
     align-items: center;
 }
 .isititle{
@@ -46,17 +41,7 @@ hr.mobile{
 .navbar{
     padding-top: 10px;
 }
-.desktop{
-    display: none;
-}
-@media(min-width:650px){
-    .desktop{
-        display: inherit;
-    }
-    .mobile{
-        display: none;
-    }
-}
+
 a,a:hover{
     text-decoration: none;
     color: black;
