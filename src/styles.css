@@ -39,6 +39,10 @@ a.button{
     display: flex;
     flex-direction: row;
 }
+.rrow{
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 
 .student-img{
@@ -62,7 +66,7 @@ hr.thick{
     display: none;
 }
 
-@media(min-width:700px){
+@media(min-width:800px){
     .desktop{
         display: block;
     }

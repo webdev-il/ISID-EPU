@@ -5,6 +5,7 @@ export interface paraSpec {
     list?: string[];
     internalLink?:routeSpec;
     image?: string;
+    reverse?: boolean;
 }
 export interface textPageSpec {
     title: string;

@@ -3,7 +3,7 @@
         <p  *ngIf="!(para!.image)" [innerHTML]="para!.text|safe:'html'"></p>
         <div *ngIf="para!.image">
             <div class="desktop">
-                <div class="row">
+                <div [class]="para!.reverse?'rrow':'row'">
                     <img class="article-img-desktop" *ngIf="para!.image" src="{{para!.image}}"/>
                     <p [innerHTML]="para!.text|safe:'html'"></p>
                 </div>

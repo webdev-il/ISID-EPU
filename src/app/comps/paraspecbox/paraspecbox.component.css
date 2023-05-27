@@ -6,6 +6,9 @@
 .row{
     align-items: center;
 }
+.rrow{
+    align-items: center;  
+}
 .desktop.col{
     display: flex;
     flex-direction: column;
