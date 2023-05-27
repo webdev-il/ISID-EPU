@@ -23,6 +23,7 @@
 .article-img-mobile{
     padding: 10px;
     width: 400px;
+    max-width: 90%;
 }
 
 
