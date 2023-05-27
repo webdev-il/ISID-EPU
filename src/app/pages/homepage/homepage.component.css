@@ -1,7 +1,4 @@
-.col{
-    display: flex;
-    flex-direction: column;
-}
+
 .links{
     display: flex;
     flex-direction: column;
@@ -22,18 +19,9 @@ a{
     text-decoration: none;
     text-align: center;
     color: var(--primary);
-    font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     padding: 10px;
 }
 a:hover{
     background-color: #ddd;
-}
-hr{
-    border: 0;
-    clear:both;
-    display:block;
-    width: 100%;               
-    background-color:var(--secondary);
-    height: 5px;
 }

@@ -1,10 +1,10 @@
 <div class="main" [ngStyle]="{width:(width?width:'')}">
     <div class="text">
         <a *ngIf="person.imageLink" href="{{person.imageLink}}">
-            <img src="{{person.image}}" width="200" height="200">
+            <img src="{{person.image}}" class="person-img">
         </a>
-        <img *ngIf="!person.imageLink" src="{{person.image}}" width="200" height="200">
-        <div class="title" [innerHTML]="person.name"></div>
+        <img *ngIf="!person.imageLink" src="{{person.image}}" class="person-img">
+        <div class="person-title" [innerHTML]="person.name"></div>
     </div>
     <div class="body">
         <app-paraspecbox [para]="{text:person.description}"></app-paraspecbox>

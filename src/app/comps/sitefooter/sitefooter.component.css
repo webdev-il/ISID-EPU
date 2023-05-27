@@ -2,11 +2,3 @@ div{
     height: 50px;
     text-align: center;
 }
-hr{
-    border: 0;
-    clear:both;
-    display:block;
-    width: 100%;               
-    background-color:var(--secondary);
-    height: 5px;
-}

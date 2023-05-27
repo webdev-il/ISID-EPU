@@ -1,7 +1,6 @@
 .navbar {
   overflow: hidden;
   display: flex;
-  font-family: Arial;
 }
 .desktop-navbar{
   flex-direction: row;
@@ -33,14 +32,12 @@
 }
 .desktop .childRoute{
   font-size: 16px;
-  font-family: inherit;
   padding: 10px;
   background-color: white;
 }
 
 .mobile .childRoute{
   font-size: 16px;
-  font-family: inherit;
   background-color: white;
 }
 
@@ -80,19 +77,6 @@
 
 .desktop-navbar>.dropdown:hover .dropdown-content {
   display: block;
-}
-.desktop-navbar{
-  display: none;
-}
-
-
-@media(min-width:700px){
-  .desktop-navbar{
-    display: inherit;
-  }
-  .mobile-navbar{
-    display: none;
-  }
 }
 
 .routeWithChildren{

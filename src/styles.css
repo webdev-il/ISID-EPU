@@ -1,15 +1,13 @@
-/* :root{
-    --primary:#fc7087;
-    --secondary:#333;
-    --whitish:#ddd;
-} */
 :root{
     --primary:#00356b;
     --secondary:#286dc0;
     --accent:#006ef5;
     --light:#7eb3f5;
     --mgvwidth:600px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Source Sans Pro";
+    /* font-family: "Red Hat Display"; */
+    /* font-family: 'Manrope',sans-serif; */
 }
 html,body{
     margin: 0;
@@ -28,4 +26,51 @@ a.button{
     padding: 5px;
     font-size: large;
     border-radius: 5px;
+}
+.title{
+    font-size: x-large;
+    text-align: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.rrow{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.student-img{
+    width: 250px;
+    height: 250px;
+}
+.person-img{
+    width: 200px;
+    height: 200px;
+}
+hr.thick{
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color:var(--secondary);
+    height: 5px;
+}
+
+.desktop{
+    display: none;
+}
+
+@media(min-width:800px){
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
 }

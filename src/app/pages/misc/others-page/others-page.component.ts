@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import { otherSpec, othersData } from 'src/data/otherspage';
+import {VersatilePageSpec, othersData, othersSpec } from 'src/data/otherspage';
 
 @Component({
   selector: 'app-others-page',
@@ -7,14 +7,14 @@ import { otherSpec, othersData } from 'src/data/otherspage';
   styleUrls: ['./others-page.component.css']
 })
 export class OthersPageComponent implements OnInit{
-  allData:otherSpec = othersData;
-  data:any = {
+  allData:othersSpec = othersData;
+  data:VersatilePageSpec = {
     title:`Loading`,
     groups:[]
   }
   ngOnInit(){
     let parts = (window.location.href).split('/')
     let key = parts[parts.length-1]
-    this.data = Object(this.allData)[key]
+    this.data = this.allData[key]
   }
 }

@@ -3,18 +3,21 @@ import { paraSpec } from "./aboutuspage";
 import { HomePageRoutes } from "./homepage";
 import { miscRoutes } from "./miscroutes";
 import { OthersPageComponent } from "src/app/pages/misc/others-page/others-page.component";
+import { Component } from "@angular/core";
+import { Route } from "@angular/router";
+import { routeSpec } from "./navigation";
 
-export interface otherSpec {
-    demo: {
-        title: string;
-        groups: {
-            title?: string;
-            paragraphs: paraSpec[]
-        }[]
-    }
+export interface VersatilePageSpec {
+    title: string;
+    groups: {
+        title?: string;
+        paragraphs: paraSpec[];
+    }[];
 }
 
-export const othersData: otherSpec = {
+export type othersSpec = {[key:string]:VersatilePageSpec};
+
+export const othersData: othersSpec = {
     demo: {
         title: 'Demo Article for New Pages',
         groups: [
@@ -71,10 +74,14 @@ export const othersData: otherSpec = {
         ]
     }
 }
-export const otherRoutes = Object.keys(othersData).map((key,index,[])=>{
-    return {
-        route:`misc/others/${key}`,
-        component:OthersPageComponent,
-        label:key
-    }
-})
+export const otherRoutes = dictionaryToRouteList(othersData,'misc/others/',OthersPageComponent)
+
+export function dictionaryToRouteList(dict:{[key:string]:any},basePath:string,component:any):routeSpec[]{
+    return Object.keys(dict).map((key,index,[])=>{
+        return {
+            route:`${basePath}${key}`,
+            component:component,
+            label:key
+        }
+    })
+}

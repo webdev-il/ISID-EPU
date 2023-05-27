@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: row;
 }
-.title{
+
+.person-title{
     padding: 5px;
     margin-top: 10px;
     font-size: larger;

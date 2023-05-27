@@ -1,0 +1,19 @@
+<div class="desktop">
+    <div class="row">
+        <img src="{{data.image}}" class="person-img">
+        <div class="col details">
+            <p class="name">
+                {{data.name}}
+            </p>
+            <hr class="thick">
+            <p [innerHTML]="data.subtitle"></p>
+        </div>
+        <div class="side">
+            <p class="heading">Links:</p>
+            <hr class="thick">
+            <div class="link" *ngFor="let link of data.profileLinks">
+                <a [href]="link.link">{{link.site}}</a>
+            </div>
+        </div>
+    </div>
+</div>
