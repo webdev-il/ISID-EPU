@@ -18,7 +18,7 @@ export const MSQEPageData:msqePageSpecs = {
             <br>
             Admission: Information regarding the admission process is advertised in major Indian newspapers and on our website in February of each year: ISI Admissions. The entrance tests are held in early May, and interviews are held in early July. Detailed information about this is mailed to candidates who apply for the program. A new session starts in late July.
             `,
-            image:'/assets/campus/classroom2.jpeg',
+            image:'assets/campus/classroom2.jpeg',
             reverse:true
         },
         {text:`Some sample question papers with syllabus can be found here: <a href="https://www.isical.ac.in/~admission/">click here</a>. `},
@@ -28,7 +28,7 @@ export const MSQEPageData:msqePageSpecs = {
         },
         {
             text:`Placement: Our M.S.Q.E. students get placed in industry in India and abroad. Some of the companies which recruited M.S.Q.E. students in the last few years are D.E. Shaw, Genpact, Goldman Sachs, HP Analytics, ICICI Bank, JP Morgan, KPMG, Walmart. Some of our M.S.Q.E. students go abroad for doctoral studies. Over the last few years, our students have received scholarships from <strong>Harvard University, MIT, Princeton University, Yale University, University of Pennsylvania, New York University, University of Minnesota, Northwestern University, Caltech, Columbia University, University of Wisconsin, Cornell University, University of Texas, Austin</strong> and other US universities for their doctoral studies. Visit the <a href="/home/placements">placement link</a> for further details on campus recruitments.`,
-            image:`/assets/campus/students2.jpeg`,
+            image:`assets/campus/students2.jpeg`,
         },
     ]
 }
