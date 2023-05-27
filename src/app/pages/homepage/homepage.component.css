@@ -26,11 +26,3 @@ a{
 a:hover{
     background-color: #ddd;
 }
-hr{
-    border: 0;
-    clear:both;
-    display:block;
-    width: 100%;               
-    background-color:var(--secondary);
-    height: 5px;
-}

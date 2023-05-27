@@ -37,6 +37,27 @@ a.button{
     flex-direction: row;
 }
 
+
+.student-img{
+    width: 250px;
+    height: 250px;
+}
+.person-img{
+    width: 200px;
+    height: 200px;
+}
+
+hr.thick{
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color:var(--secondary);
+    height: 5px;
+}
+
+
+
 .desktop{
     display: none;
 }

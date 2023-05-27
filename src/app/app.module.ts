@@ -30,6 +30,7 @@ import { PhdStudentsPageComponent } from './pages/people/phd-students-page/phd-s
 import { StudentboxComponent } from './comps/studentbox/studentbox.component';
 import { FormsModule } from '@angular/forms';
 import { OthersPageComponent } from './pages/misc/others-page/others-page.component';
+import { PersonPageComponent } from './pages/people/person-page/person-page.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { OthersPageComponent } from './pages/misc/others-page/others-page.compon
     PastSeminarsPageComponent,
     PhdStudentsPageComponent,
     StudentboxComponent,
-    OthersPageComponent
+    OthersPageComponent,
+    PersonPageComponent
   ],
   imports: [
     BrowserModule,

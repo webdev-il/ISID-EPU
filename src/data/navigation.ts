@@ -13,6 +13,7 @@ import { WorkshopsPageComponent } from "src/app/pages/events/workshops-page/work
 import { SeminarPageComponent } from "src/app/pages/events/seminar-page/seminar-page.component";
 import { PhdStudentsPageComponent } from "src/app/pages/people/phd-students-page/phd-students-page.component";
 import { otherRoutes } from "./otherspage";
+import { personRoutes } from "./personspage";
 
 export interface routeSpec{
     label:string;
@@ -131,6 +132,7 @@ export function parseRoutes(navbarroutes:routeSpec[]):Routes{
     routes.push(...HomePageRoutes.map((routespec,index,[])=>parseRouteSpec(routespec)))
     routes.push(...objectToVals(miscRoutes).map((routespec,index,[])=>parseRouteSpec(routespec)))
     routes.push(...(otherRoutes).map((routespec,index,[])=>parseRouteSpec(routespec)))
+    routes.push(...(personRoutes).map((routespec,index,[])=>parseRouteSpec(routespec)))
     return routes;
 }
 
