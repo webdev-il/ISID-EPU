@@ -49,7 +49,6 @@ a.button{
     width: 200px;
     height: 200px;
 }
-
 hr.thick{
     border: 0;
     clear:both;
@@ -59,11 +58,10 @@ hr.thick{
     height: 5px;
 }
 
-
-
 .desktop{
     display: none;
 }
+
 @media(min-width:700px){
     .desktop{
         display: block;
