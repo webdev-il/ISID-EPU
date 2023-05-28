@@ -7,7 +7,7 @@
     align-items: center;
 }
 .rrow{
-    align-items: center;  
+    align-items: center;
 }
 .desktop.col{
     display: flex;
@@ -32,4 +32,5 @@
 }
 .mobile.standalone-img{
     width: 400px;
+    max-width: 90%;
 }
