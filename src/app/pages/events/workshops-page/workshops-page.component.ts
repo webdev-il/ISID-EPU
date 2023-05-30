@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { WorkshopsPageData, workshopsPageSpec } from 'src/data/workshopspage';
+import { textPageSpec } from 'src/data/rtl.utils';
+import { WorkshopsPageData } from 'src/data/workshopspage';
 
 @Component({
   selector: 'app-workshops-page',
@@ -7,5 +8,5 @@ import { WorkshopsPageData, workshopsPageSpec } from 'src/data/workshopspage';
   styleUrls: ['./workshops-page.component.css']
 })
 export class WorkshopsPageComponent {
-  data:workshopsPageSpec = WorkshopsPageData;
+  data:textPageSpec = WorkshopsPageData;
 }

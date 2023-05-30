@@ -2,3 +2,8 @@ div{
     height: 50px;
     text-align: center;
 }
+/* .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} */

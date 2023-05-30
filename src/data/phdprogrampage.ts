@@ -1,7 +1,6 @@
 import { PlaceholderComponent } from "src/app/pages/placeholder/placeholder.component";
-import { paraSpec } from "./aboutuspage";
-import { routeSpec } from "./navigation";
 import { miscRoutes } from "./miscroutes";
+import { paraSpec } from "./rtl.utils";
 
 export interface FAQinfo {
     question: string;

@@ -1,5 +1,5 @@
 import { PersonPageComponent } from "src/app/pages/people/person-page/person-page.component";
-import { dictionaryToRouteList } from "./otherspage";
+import { dictionaryToRouteList } from "./rtl.utils";
 
 export interface ProfileLinkSpec{
     site:string;

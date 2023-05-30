@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavBarRoutes, routeSpec } from 'src/data/navigation';
+import { NavBarRoutes } from 'src/data/navigation';
+import { routeSpec } from 'src/data/rtl.utils';
 
 @Component({
   selector: 'app-navbar',

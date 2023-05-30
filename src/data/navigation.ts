@@ -2,7 +2,6 @@ import { Routes,Route } from "@angular/router";
 import { MsqepageComponent } from "src/app/pages/academics/msqepage/msqepage.component";
 import { HomepageComponent } from "src/app/pages/homepage/homepage.component";
 import { HomePageRoutes } from "./homepage";
-import { PlaceholderComponent } from "src/app/pages/placeholder/placeholder.component";
 import { PhdProgramPageComponent } from "src/app/pages/academics/phd-program-page/phd-program-page.component";
 import { miscRoutes } from "./miscroutes";
 import { CoursesPageComponent } from "src/app/pages/academics/courses-page/courses-page.component";
@@ -14,13 +13,8 @@ import { SeminarPageComponent } from "src/app/pages/events/seminar-page/seminar-
 import { PhdStudentsPageComponent } from "src/app/pages/people/phd-students-page/phd-students-page.component";
 import { otherRoutes } from "./otherspage";
 import { personRoutes } from "./personspage";
+import { objectToVals, parseRouteSpec, parseRoutes, routeSpec } from "./rtl.utils";
 
-export interface routeSpec{
-    label:string;
-    route?:string;
-    component?:any;
-    children?:routeSpec[]
-}
 export const NavBarRoutes: routeSpec[] = [
     {
         label:`Home`,
@@ -125,46 +119,11 @@ export const NavBarRoutes: routeSpec[] = [
     }
 ]
 
-export function parseRoutes(navbarroutes:routeSpec[]):Routes{
-    const routes:Routes = navbarroutes.map((routespec,index,[])=>{
-        return parseRouteSpec(routespec);
-    }).filter((route,index,[])=>Object.keys(route).length!==0);
+export function getAllRoutes():Routes{
+    const routes = parseRoutes(NavBarRoutes)
     routes.push(...HomePageRoutes.map((routespec,index,[])=>parseRouteSpec(routespec)))
     routes.push(...objectToVals(miscRoutes).map((routespec,index,[])=>parseRouteSpec(routespec)))
     routes.push(...(otherRoutes).map((routespec,index,[])=>parseRouteSpec(routespec)))
     routes.push(...(personRoutes).map((routespec,index,[])=>parseRouteSpec(routespec)))
-    return routes;
-}
-
-function parseRouteSpec(routespec: routeSpec) {
-    let route: Route = {};
-    if (routespec.component) {
-        route = {
-            path: routespec.route,
-            component: routespec.component
-        };
-    }
-    else {
-        if (routespec.children) {
-            let basePath = routespec.children[0].route!.split(`/`)[0];
-            route = {
-                path: basePath,
-                children: routespec.children.map((childRouteSpec, index, value) => {
-                    if(childRouteSpec.route?.startsWith('http')){
-                        return {};
-                    }
-                    let childRoute: Route = {
-                        path: childRouteSpec.route?.split(`/`).slice(1, undefined).join(`/`),
-                        component: childRouteSpec.component
-                    };
-                    return childRoute;
-                }).filter((route,index,[])=>Object.keys(route).length!==0)
-            };
-        }
-    }
-    return route;
-}
-
-export function objectToVals<T>(object:{[key:string]:T}):T[]{
-    return Object.keys(object).map((key,index,[])=>object[key]);
+    return routes
 }

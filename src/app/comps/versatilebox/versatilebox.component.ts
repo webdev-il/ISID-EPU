@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { paraSpec } from 'src/data/aboutuspage';
+import { paraSpec } from 'src/data/rtl.utils';
 
 @Component({
   selector: 'app-versatilebox',

@@ -1,4 +1,5 @@
-import { paraSpec } from "./aboutuspage";
+import { paraSpec } from "./rtl.utils";
+
 export interface seminarSpec{
     title:string;
     description:string;

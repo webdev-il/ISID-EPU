@@ -1,4 +1,4 @@
-import { paraSpec } from "./aboutuspage";
+import { paraSpec } from "./rtl.utils";
 
 export interface acegdSpec{
     title:string;

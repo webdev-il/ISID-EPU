@@ -1,5 +1,5 @@
-import { paraSpec } from "./aboutuspage";
 import { miscRoutes } from "./miscroutes";
+import { paraSpec } from "./rtl.utils";
 
 export interface seminarPageSpec{
     title:string;

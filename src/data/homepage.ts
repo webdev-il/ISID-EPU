@@ -1,10 +1,9 @@
 import { MsqepageComponent } from "src/app/pages/academics/msqepage/msqepage.component";
-import { routeSpec } from "./navigation";
 import { AboutUsPageComponent } from "src/app/pages/about-us-page/about-us-page.component";
 import { AnnouncementsPageComponent } from "src/app/pages/announcements-page/announcements-page.component";
 import { PlacementspageComponent } from "src/app/pages/placementspage/placementspage.component";
-import { paraSpec } from "./aboutuspage";
 import { ContactsPageComponent } from "src/app/pages/contacts-page/contacts-page.component";
+import { paraSpec, routeSpec } from "./rtl.utils";
 
 export interface homePageDataSpec{
     links:routeSpec[],
