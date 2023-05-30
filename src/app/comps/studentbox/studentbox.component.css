@@ -12,6 +12,7 @@
     text-align: center;
     background-color: var(--primary);
     z-index: 1;
+    max-width: 90%;
 }
 
 img{
