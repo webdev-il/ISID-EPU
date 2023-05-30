@@ -1,4 +1,4 @@
-import { textPageSpec } from "./aboutuspage";
+import { textPageSpec } from "./rtl.utils";
 
 export const PlacementPageData: textPageSpec[] = [
     {

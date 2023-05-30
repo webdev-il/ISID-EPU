@@ -1,9 +1,6 @@
-import { PlaceholderComponent } from "src/app/pages/placeholder/placeholder.component";
-import { objectToVals, routeSpec } from "./navigation";
 import { PastPhdStudentsComponent } from "src/app/pages/misc/past-phd-students/past-phd-students.component";
 import { PastSeminarsPageComponent } from "src/app/pages/misc/past-seminars-page/past-seminars-page.component";
-import { othersData } from "./otherspage";
-import { OthersPageComponent } from "src/app/pages/misc/others-page/others-page.component";
+import { routeSpec } from "./rtl.utils";
 export const miscRoutes:{[key:string]:routeSpec} = {
     pastPhdStudents:{
         route:'misc/pastphdstudents',

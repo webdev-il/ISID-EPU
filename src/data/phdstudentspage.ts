@@ -1,6 +1,6 @@
-import { paraSpec } from "./aboutuspage";
 import { PersonSpec } from "./facultypage";
 import { miscRoutes } from "./miscroutes";
+import { paraSpec } from "./rtl.utils";
 
 export interface PhdStudentsSpec {
     title: string;

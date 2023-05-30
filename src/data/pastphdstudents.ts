@@ -1,4 +1,3 @@
-import { paraSpec } from "./aboutuspage";
 
 export interface PastPhdStudent {
     name: string;

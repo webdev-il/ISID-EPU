@@ -1,10 +1,6 @@
-import { paraSpec } from "./aboutuspage";
+import { paraSpec, textPageSpec } from "./rtl.utils";
 
-export interface workshopsPageSpec{
-    title:string;
-    paragraphs:paraSpec[]
-}
-export const WorkshopsPageData:workshopsPageSpec = {
+export const WorkshopsPageData:textPageSpec = {
     title:`Regular Workshops`,
     paragraphs:[
         {

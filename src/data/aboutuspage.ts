@@ -1,17 +1,6 @@
-import { routeSpec } from "./navigation";
+import { textPageSpec } from "./rtl.utils";
 
-export interface paraSpec {
-    text?: string;
-    list?: string[];
-    internalLink?:routeSpec;
-    image?: string;
-    reverse?: boolean;
-}
-export interface textPageSpec {
-    title: string;
-    paragraphs: paraSpec[];
-    images?:string[];
-}
+
 export const AboutUsData: textPageSpec = {
     title: `About Us`,
     paragraphs: [
@@ -23,6 +12,4 @@ export const AboutUsData: textPageSpec = {
             image:`assets/campus/tree1.jpeg`
         }
     ],
-    images:[
-    ]
 }

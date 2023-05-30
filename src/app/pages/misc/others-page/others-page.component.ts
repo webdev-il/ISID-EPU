@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
-import {VersatilePageSpec, othersData, othersSpec } from 'src/data/otherspage';
+import {othersData, othersSpec } from 'src/data/otherspage';
+import { VersatilePageSpec } from 'src/data/rtl.utils';
 
 @Component({
   selector: 'app-others-page',
