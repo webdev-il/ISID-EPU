@@ -4,7 +4,13 @@
             <img src="{{person.image}}" class="person-img">
         </a>
         <img *ngIf="!person.imageLink" src="{{person.image}}" class="person-img">
-        <div class="person-title fs-larger" [innerHTML]="person.name"></div>
+        <div class="person-title fs-larger row">
+            <a *ngIf="person.personPageKey" class="personLink" [href]="'/people/individual/'+person.personPageKey">
+                {{person.name}}
+            </a>
+            <i *ngIf="person.personPageKey" style="color: white;" class="fa fa-external-link-square"></i>
+            <div *ngIf="!person.personPageKey">{{person.name}}</div>
+        </div>
     </div>
     <div class="body fs-medium">
         <app-paraspecbox [para]="{text:person.description}"></app-paraspecbox>

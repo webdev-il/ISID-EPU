@@ -9,7 +9,15 @@
     margin-top: 10px;
     color: white;
     background-color: var(--primary);
-    z-index: 1;
+    /* z-index: 1; */
+    justify-content: space-around;
+}
+a.personLink{
+    color: white;
+}
+.person-title:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 .body{
     margin-left: -10px;

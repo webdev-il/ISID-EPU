@@ -3,6 +3,7 @@ export interface PersonSpec {
     image: string;
     name: string;
     description: string;
+    personPageKey?:string;
 }
 
 export interface facultyPageSpecs{
@@ -91,7 +92,8 @@ export const facultyPageData:facultyPageSpecs = {
                         <a href="http://www.isid.ac.in/~asen">Webpage</a>`,
             image:`assets/people/asen.jpg`,
             name:`Arunava Sen`,
-            imageLink:`http://www.isid.ac.in/~asen`
+            imageLink:`http://www.isid.ac.in/~asen`,
+            personPageKey:`arunava_sen`
         },
         {
             description:`Professor <br>

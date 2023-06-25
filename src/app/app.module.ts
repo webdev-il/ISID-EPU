@@ -31,6 +31,8 @@ import { StudentboxComponent } from './comps/studentbox/studentbox.component';
 import { FormsModule } from '@angular/forms';
 import { OthersPageComponent } from './pages/misc/others-page/others-page.component';
 import { PersonPageComponent } from './pages/people/person-page/person-page.component';
+import { PublicationBoxComponent } from './comps/publication-box/publication-box.component';
+import { CollapsibleComponent } from './comps/collapsible/collapsible.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { PersonPageComponent } from './pages/people/person-page/person-page.comp
     PhdStudentsPageComponent,
     StudentboxComponent,
     OthersPageComponent,
-    PersonPageComponent
+    PersonPageComponent,
+    PublicationBoxComponent,
+    CollapsibleComponent
   ],
   imports: [
     BrowserModule,

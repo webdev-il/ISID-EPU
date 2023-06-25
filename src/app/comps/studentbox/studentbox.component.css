@@ -26,3 +26,11 @@ img{
     margin-top: 5px;
     border-top: 3px solid var(--primary);
 }
+
+a.personLink{
+    color: white;
+}
+.student-title:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
