@@ -2,7 +2,7 @@
     <div class="row splitdiv1">
         <div class="col">
             <img src="{{data.image}}" class="person-img">
-            <p class="heading fs-large">Links</p>
+            <div class="heading fs-large">Links</div>
             <hr class="thick">
             <div class="link" *ngFor="let link of data.profileLinks">
                 <a [href]="link.link">{{link.site}}</a>
@@ -14,9 +14,9 @@
             </p>
             <hr class="thick">
             <app-paraspecbox *ngFor="let para of data.description" [para]="para"></app-paraspecbox>
-            <p class="fs-large">
+            <div class="fs-large">
                 Selected Publications:
-            </p>
+            </div>
             <app-publication-box *ngFor="let pub of data.publications" [paper]="pub">
             </app-publication-box>
         </div>
@@ -28,16 +28,16 @@
         <p class="name fs-xx-large">
             {{data.name}}
         </p>
-        <p class="heading fs-large">Links</p>
         <hr class="thick">
+        <p class="heading fs-large">Links</p>
         <div class="link" *ngFor="let link of data.profileLinks">
             <a [href]="link.link">{{link.site}}</a>
         </div>
         <hr class="thick">
         <app-paraspecbox *ngFor="let para of data.description" [para]="para"></app-paraspecbox>
-        <p class="fs-large">
+        <div class="fs-large">
             Selected Publications:
-        </p>
+        </div>
         <app-publication-box *ngFor="let pub of data.publications" [paper]="pub">
         </app-publication-box>
     </div>
