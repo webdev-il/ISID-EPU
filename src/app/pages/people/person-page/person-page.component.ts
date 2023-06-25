@@ -11,9 +11,9 @@ export class PersonPageComponent {
   data:personPageSpec = {
     name:'Loading...',
     image:'',
-    subtitle:'',
     profileLinks:[],
-    website:''
+    description:[],
+    publications:[]
   }
   ngOnInit(){
     let parts = (window.location.href).split('/')

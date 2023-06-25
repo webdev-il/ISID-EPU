@@ -1,3 +1,9 @@
+.splitdiv1>*{
+    padding: 10px;
+}
+.maindiv1{
+    align-items: center;
+}
 .details{
     padding: 20px;
     border-right: 3px solid grey;
