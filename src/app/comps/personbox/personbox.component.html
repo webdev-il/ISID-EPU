@@ -4,9 +4,9 @@
             <img src="{{person.image}}" class="person-img">
         </a>
         <img *ngIf="!person.imageLink" src="{{person.image}}" class="person-img">
-        <div class="person-title" [innerHTML]="person.name"></div>
+        <div class="person-title fs-larger" [innerHTML]="person.name"></div>
     </div>
-    <div class="body">
+    <div class="body fs-medium">
         <app-paraspecbox [para]="{text:person.description}"></app-paraspecbox>
     </div>
 </div>

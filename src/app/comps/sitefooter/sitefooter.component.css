@@ -1,9 +1,18 @@
-div{
-    height: 50px;
+.main{
+    height: 80px;
     text-align: center;
 }
-/* .links{
+.desktop-links{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-} */
+}
+
+.mobile-links{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    font-weight: bold;
+}

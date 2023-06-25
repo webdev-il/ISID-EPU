@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HomePageRoutes } from 'src/data/homepage';
+import { footerRoutes } from 'src/data/navigation';
 
 @Component({
   selector: 'app-sitefooter',
@@ -7,5 +7,5 @@ import { HomePageRoutes } from 'src/data/homepage';
   styleUrls: ['./sitefooter.component.css']
 })
 export class SitefooterComponent {
-  homePageRoutes = HomePageRoutes;
+  links = footerRoutes;
 }

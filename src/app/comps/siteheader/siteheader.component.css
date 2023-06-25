@@ -6,16 +6,13 @@
     align-items: center;
 }
 .isititle{
-    font-size: xx-large;
     margin-right: 10px;
     padding-right: 10px;
 }
 .isititle.desktop{
     border-right: 2px solid var(--secondary);
 }
-.eputitle{
-    font-size: x-large;
-}
+
 .eputitle.mobile{
     text-align: center;
 }
