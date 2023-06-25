@@ -45,5 +45,5 @@
 
         </div>
     </div>
-    <a *ngIf="para!.internalLink" class="button" [routerLink]="[(para!.internalLink.route!.startsWith('misc')?'/'+para!.internalLink.route:para!.internalLink.route)]" [innerHTML]="para!.internalLink.label"></a>
+    <a *ngIf="para!.internalLink" class="button" [routerLink]="[(para!.internalLink.route!.startsWith('misc')?'/':'')+para!.internalLink.route]" [innerHTML]="para!.internalLink.label"></a>
 </div>
