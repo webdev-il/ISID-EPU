@@ -13,16 +13,16 @@ export const SeminarPageData:seminarPageSpec = {
     title:`Upcoming Seminars`,
     paragraphs:[
         {
-            text:`Please register for the seminar in order to receive invitations, by clicking the link below:`
-        },
-        {
-            text:`<a href="https://forms.gle/prEBGTYj5Ctdzd2i9" class="button"><b>Webinar registration</b></a>`
-        },
-        {
-            text:`For questions, please contact our seminar coordinator <strong> Debasis Mishra</strong> at <em>dmishra [at] isid.ac.in</em>.`
-        },
-        {
-            text:`Our past webinars (some with recordings) have been archived here:`
+            text:`Please register for the seminar in order to receive invitations, by clicking the link below:
+            <br>
+            <br>
+            <a href="https://forms.gle/prEBGTYj5Ctdzd2i9" class="button"><b>Webinar registration</b></a>
+            <br>
+            <br>
+            For questions, please contact our seminar coordinator <strong> Debasis Mishra</strong> at <em>dmishra [at] isid.ac.in</em>.
+            Our past webinars (some with recordings) have been archived here:`,
+            image:`assets/campus/Seminar2.jpg`,
+            reverse:true
         },
         {
             internalLink:miscRoutes["pastSeminars"],

@@ -1,7 +1,6 @@
 import { Routes,Route } from "@angular/router";
 import { MsqepageComponent } from "src/app/pages/academics/msqepage/msqepage.component";
 import { HomepageComponent } from "src/app/pages/homepage/homepage.component";
-import { HomePageRoutes } from "./homepage";
 import { PhdProgramPageComponent } from "src/app/pages/academics/phd-program-page/phd-program-page.component";
 import { miscRoutes } from "./miscroutes";
 import { CoursesPageComponent } from "src/app/pages/academics/courses-page/courses-page.component";
@@ -14,6 +13,10 @@ import { PhdStudentsPageComponent } from "src/app/pages/people/phd-students-page
 import { otherRoutes } from "./otherspage";
 import { personRoutes } from "./personspage";
 import { objectToVals, parseRouteSpec, parseRoutes, routeSpec } from "./rtl.utils";
+import { AnnouncementsPageComponent } from "src/app/pages/announcements-page/announcements-page.component";
+import { AboutUsPageComponent } from "src/app/pages/about-us-page/about-us-page.component";
+import { ContactsPageComponent } from "src/app/pages/contacts-page/contacts-page.component";
+import { PlacementspageComponent } from "src/app/pages/placementspage/placementspage.component";
 
 export const NavBarRoutes: routeSpec[] = [
     {
@@ -106,22 +109,35 @@ export const NavBarRoutes: routeSpec[] = [
             {
                 label:`CECFEE`,
                 route:`http://www.isid.ac.in/~cecfee`
-            },
-            {
-                label:`IWWAGE-ISI`,
-                route:`https://iwwage.isid.ac.in/`
-            },
-            {
-                label:`IGC-India`,
-                route:`http://www.theigc.org/countries/india-central`
             }
         ]
     }
 ]
-
+export const footerRoutes:routeSpec[] = [
+    {
+        label:`Announcements`,
+        component:AnnouncementsPageComponent,
+        route:`home/announcements`
+    },
+    {
+        label:`About Us`,
+        component:AboutUsPageComponent,
+        route:`home/aboutus`
+    },
+    {
+        label:`Contact`,
+        component:ContactsPageComponent,
+        route:`home/contact`
+    },
+    {
+        label:`Placements`,
+        component:PlacementspageComponent,
+        route:`home/placements`
+    }
+]
 export function getAllRoutes():Routes{
     const routes = parseRoutes(NavBarRoutes)
-    routes.push(...HomePageRoutes.map((routespec,index,[])=>parseRouteSpec(routespec)))
+    routes.push(...footerRoutes.map((routespec,index,[])=>parseRouteSpec(routespec)))
     routes.push(...objectToVals(miscRoutes).map((routespec,index,[])=>parseRouteSpec(routespec)))
     routes.push(...(otherRoutes).map((routespec,index,[])=>parseRouteSpec(routespec)))
     routes.push(...(personRoutes).map((routespec,index,[])=>parseRouteSpec(routespec)))

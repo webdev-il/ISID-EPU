@@ -15,13 +15,7 @@
         text-align: start;
     }
 }
-a{
-    text-decoration: none;
-    text-align: center;
-    color: var(--primary);
-    font-size: large;
-    padding: 10px;
-}
+
 a:hover{
     background-color: #ddd;
 }

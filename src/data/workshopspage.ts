@@ -16,7 +16,8 @@ export const WorkshopsPageData:textPageSpec = {
                 `<a href="https://delhiecontheory.weebly.com/">Delhi Economic Theory Workshop</a> is organized multiple times
                 every year.`,
                 `<a href="https://www.isid.ac.in/~cecfee/">CECFEE</a> organizes annual meetings and workshops. Check details <a href="https://www.isid.ac.in/~cecfee/index.php/events/">here.`
-            ]
+            ],
+            image:`assets/campus/Seminar.jpg`
         },
         {
             text:`Besides these, EPU organizes occasional workshops on specific themes.`,

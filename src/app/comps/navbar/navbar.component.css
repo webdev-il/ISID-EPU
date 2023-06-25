@@ -23,7 +23,6 @@
   overflow: hidden;
 }
 .dropdown .dropbtn {
-  font-size: 16px;
   border: none;
   outline: none;
   color: white;
@@ -31,13 +30,11 @@
   background-color: inherit;
 }
 .desktop .childRoute{
-  font-size: 16px;
   padding: 10px;
   background-color: white;
 }
 
 .mobile .childRoute{
-  font-size: 16px;
   background-color: white;
 }
 
@@ -54,7 +51,6 @@
   z-index: 2;
 }
 .dropdown-content.mobile{
-  font-size: 16px;
   outline: none;
   color: white;
   margin-left: 10px;

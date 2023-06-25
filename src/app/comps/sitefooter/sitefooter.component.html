@@ -1,7 +1,17 @@
-<div>
+<div class="main">
     <hr class="thick">
-    <!-- <div class="links">
-        <a *ngFor="let link of homePageRoutes" [routerLink]="[link.route]">{{link.label}}</a>
-    </div> -->
-    © Economics and Planning Unit. All rights reserved.
+    <div class="desktop">
+        <div class="desktop-links">
+            <a *ngFor="let link of links" [routerLink]="[link.route]">{{link.label}}</a>
+        </div>
+    </div>
+    <div class="mobile">
+        <div class="mobile-links">
+            <a *ngFor="let link of links" [routerLink]="[link.route]">{{link.label}}</a>
+        </div>
+    </div>
+    <div>
+        © Economics and Planning Unit. All rights reserved.
+    </div>
+    <br>
 </div>

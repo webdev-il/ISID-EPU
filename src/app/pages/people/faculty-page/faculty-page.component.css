@@ -1,10 +1,10 @@
 
 .subtitle{
-    font-size: larger;
     color: var(--secondary);
 }
 .grid{
     display: grid;
+    align-items: center;
 }
 @media (min-width:1100px){
     .grid{
