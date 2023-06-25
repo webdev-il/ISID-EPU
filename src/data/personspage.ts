@@ -124,7 +124,7 @@ export const PersonsData:personsSpec = {
             },
             {
                 link:`https://www.isid.ac.in/~asen/`,
-                site:`Personal Site`
+                site:`Website`
             }
         ]
     },
@@ -157,7 +157,7 @@ export const PersonsData:personsSpec = {
         image:`assets/people/dm.jpg`,
         profileLinks:[
             {
-                site:`Webpage`,
+                site:`Website`,
                 link:`http://www.isid.ac.in/~dmishra`
             }
         ],
@@ -246,7 +246,7 @@ export const PersonsData:personsSpec = {
         image:`assets/people/es.jpg`,
         profileLinks:[
             {
-                site:`Webpage`,
+                site:`Website`,
                 link:`http:www.isid.ac.in/~som`
             }
         ],
@@ -338,7 +338,7 @@ export const PersonsData:personsSpec = {
         ],
         profileLinks:[
             {
-                site:`Webpage`,
+                site:`Website`,
                 link:`https://kanishkakacker.wixsite.com/mysite`
             }
         ],
@@ -407,7 +407,7 @@ export const PersonsData:personsSpec = {
         profileLinks:[
             {
                 link:'https://www.isid.ac.in/~fafridi/',
-                site:`Personal Website`
+                site:`Website`
             }
         ],
         publications:[
@@ -524,7 +524,7 @@ export const PersonsData:personsSpec = {
         ],
         profileLinks:[
             {
-                site:`Webpage`,
+                site:`Website`,
                 link:`https://www.isid.ac.in/~tridip/`
             }
         ]
@@ -611,7 +611,7 @@ export const PersonsData:personsSpec = {
         ],
         profileLinks:[
             {
-                site:`Webpage`,
+                site:`Website`,
                 link:`https://www.isid.ac.in/~mbishnu/`
             }
         ],
@@ -701,7 +701,7 @@ export const PersonsData:personsSpec = {
         ],
         profileLinks:[
             {
-                site:`Webpage`,
+                site:`Website`,
                 link:`https://sites.google.com/view/abhiroop`
             }
         ],
@@ -798,7 +798,7 @@ export const PersonsData:personsSpec = {
         ],
         profileLinks:[
             {
-                site:`Webpage`,
+                site:`Website`,
                 link:`https://www.isid.ac.in/~cghate/`
             }
         ],
@@ -951,7 +951,7 @@ export const PersonsData:personsSpec = {
         ],
         profileLinks:[
             {
-                site:`Webpage`,
+                site:`Website`,
                 link:`https://www.isid.ac.in/~prabalrc/`
             }
         ],
