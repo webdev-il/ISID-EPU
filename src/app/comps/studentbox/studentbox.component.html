@@ -2,9 +2,12 @@
     <a *ngIf="person.imageLink" href="{{person.imageLink}}">
         <img src="{{person.image}}" class="student-img">
     </a>
-    <img *ngIf="!person.imageLink" src="{{person.image}}" class="student-img">
+    <a *ngIf="(!person.imageLink)&&person.personPageKey" [routerLink]="'/people/individual/'+person.personPageKey">
+        <img src="{{person.image}}" class="student-img">
+    </a>
+    <img *ngIf="(!person.imageLink)&&(!person.personPageKey)" src="{{person.image}}" class="student-img">
     <div class="student-title fs-larger">
-        <a *ngIf="person.personPageKey" class="personLink" [href]="'/people/individual/'+person.personPageKey">
+        <a *ngIf="person.personPageKey" class="personLink" [routerLink]="'/people/individual/'+person.personPageKey">
             {{person.name}}
         </a>
         <i *ngIf="person.personPageKey" style="color: white;" class="fa fa-external-link-square"></i>
