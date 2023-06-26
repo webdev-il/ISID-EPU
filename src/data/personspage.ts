@@ -14,6 +14,7 @@ export interface ProfileLinkSpec{
 export interface personPageSpec{
     name:string;
     image:string;
+    title:string;
     description:paraSpec[];
     publications:publication[]
     profileLinks:ProfileLinkSpec[]
@@ -24,6 +25,9 @@ export const PersonsData:personsSpec = {
     arunava_sen:{
         name:`Arunava Sen`,
         image:`assets/people/asen.jpg`,
+        title:`Professor
+                <br>
+                PhD, Princeton University`,
         description:[
             {
                 text:`Arunava Sen is a professor in the Economics and Planning 
@@ -130,6 +134,10 @@ export const PersonsData:personsSpec = {
     },
     debasis_mishra:{
         name:`Debasis Mishra`,
+        image:`assets/people/dm.jpg`,
+        title:`Professor
+                <br>
+                PhD, University of Wisconsin, Madison`,
         description:[
             {
                 text:`Debasis Mishra is a professor in the Economics and Planning 
@@ -154,7 +162,6 @@ export const PersonsData:personsSpec = {
                 `
             }
         ],
-        image:`assets/people/dm.jpg`,
         profileLinks:[
             {
                 site:`Website`,
@@ -213,6 +220,10 @@ export const PersonsData:personsSpec = {
     },
     esomanathan:{
         name:`E. Somanathan`,
+        image:`assets/people/es.jpg`,
+        title:`Professor
+                <br>
+                PhD, Harvard University`,
         description:[
             {
                 text:`E. Somanathan is Professor in the Economics and Planning 
@@ -243,7 +254,6 @@ export const PersonsData:personsSpec = {
                 `
             }
         ],
-        image:`assets/people/es.jpg`,
         profileLinks:[
             {
                 site:`Website`,
@@ -308,10 +318,12 @@ export const PersonsData:personsSpec = {
             },
         ]
     },
-    
     kanishka_kracker:{
         name:`Kanishka Kacker`,
         image:`assets/people/kk.jpg`,
+        title:`Assistant Professor
+                <br>
+                PhD, University of Maryland`,
         description:[
             {
                 text:`Kanishka Kacker is an Assistant Professor in the Economics 
@@ -375,6 +387,9 @@ export const PersonsData:personsSpec = {
     farzana_afridi:{
         name:'Farzana Afridi',
         image:'assets/people/farzana.jpg',
+        title:`Professor
+                <br>
+                PhD, University of Michigan<br>`,
         description:[
             {
                 text:`Farzana Afridi is Professor in the Economics and Planning 
@@ -467,6 +482,10 @@ export const PersonsData:personsSpec = {
     },
     tridip_ray:{
         name:`Tridip Ray`,
+        image:`assets/people/tridip.jpg`,
+        title:`Professor
+                <br>
+                PhD, Cornell University`,
         description:[
             {
                 text:`Tridip Ray is a Professor in the Economics and Planning 
@@ -489,7 +508,6 @@ export const PersonsData:personsSpec = {
                 `
             }
         ],
-        image:`assets/people/tridip.jpg`,
         publications:[
             {
                 title:`Optimal Intergenerational Transfers: Public Education and Pensions`,
@@ -532,6 +550,9 @@ export const PersonsData:personsSpec = {
     monisankar_bishnu:{
         name:`Monisankar Bishnu`,
         image:`assets/people/mbishnu.jpg`,
+        title:`Associate Professor
+                <br>
+                PhD, Iowa State University`,
         description:[
             {
                 text:`Monisankar Bishnu is an Associate Professor in the 
@@ -619,6 +640,11 @@ export const PersonsData:personsSpec = {
     abhiroop_mukhopadhyay:{
         name:`Abhiroop Mukhopadhyay`,
         image:`assets/people/am.jpg`,
+        title:`Head, EPU, 
+                <br>
+                Professor
+                <br>
+                PhD, Pennsylvania State University`,
         description:[
             {
                 text:`Abhiroop Mukhopadhyay is a Professor in the Economics and 
@@ -709,6 +735,9 @@ export const PersonsData:personsSpec = {
     chetan_ghate:{
         name:`Chetan Ghate`,
         image:`assets/people/cg.jpg`,
+        title:`Professor
+                <br>
+                PhD, Claremont Graduate School`,
         description:[
             {
                 text:`Chetan Ghate is a Professor in the Economics and Planning 
@@ -806,6 +835,9 @@ export const PersonsData:personsSpec = {
     mudit_kapoor:{
         name:`Mudit Kapoor`,
         image:`assets/people/mudit.jpg`,
+        title:`Associate Professor
+                <br>
+                PhD, University of Maryland`,
         description:[
             {
                 text:`Mudit Kapoor is an Associate Professor of Economics in the 
@@ -880,6 +912,9 @@ export const PersonsData:personsSpec = {
     prabal_roy_chowdhury:{
         name:`Prabal Roy Chowdhury`,
         image:`assets/people/pro.jpg`,
+        title:`Professor
+                <br>
+                PhD, Indian Statistical Institute`,
         description:[
             {
                 text:`Prabal Roy Chowdhury is a professor in the Economics and 
