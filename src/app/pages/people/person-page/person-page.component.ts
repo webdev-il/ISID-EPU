@@ -11,6 +11,7 @@ export class PersonPageComponent {
   data:personPageSpec = {
     name:'Loading...',
     image:'',
+    title:'',
     profileLinks:[],
     description:[],
     publications:[]

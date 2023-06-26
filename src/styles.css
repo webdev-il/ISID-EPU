@@ -84,7 +84,14 @@ hr.thick{
     background-color:var(--secondary);
     height: 5px;
 }
-
+hr.thin{
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color:var(--light);
+    height: 3px;
+}
 .desktop{
     display: none;
 }
