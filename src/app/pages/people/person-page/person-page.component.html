@@ -5,7 +5,7 @@
             <div class="heading fs-large linktitle">Links</div>
             <hr class="thick">
             <div class="link" *ngFor="let link of data.profileLinks">
-                <a [href]="link.link"><i class="fa fa-external-link"></i> {{link.site}}</a>
+                <a [href]="link.link" target="_blank"><i class="fa fa-external-link"></i> {{link.site}}</a>
             </div>
         </div>
         <div class="col">

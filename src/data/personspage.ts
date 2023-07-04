@@ -119,10 +119,6 @@ export const PersonsData:personsSpec = {
                 site:`Google Scholar`
             },
             {
-                link:`https://www.linkedin.com/in/arunava-sen-24859918b/?originalSubdomain=in`,
-                site:`LinkedIn`
-            },
-            {
                 link:`https://en.wikipedia.org/wiki/Arunava_Sen`,
                 site:`Wikipedia`
             },
