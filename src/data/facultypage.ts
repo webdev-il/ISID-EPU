@@ -17,12 +17,20 @@ export interface facultyPageSpecs{
     
 }
 export function getSummarizedFacultyList(data:personsSpec):PersonSpec[]{
-    return Object.keys(data).map((key)=>({
+    let summarizedFaculty:PersonSpec[] = Object.keys(data).map((key:string)=>({
         name:data[key].name,
         description:data[key].title,
         image:data[key].image,
         personPageKey:key
-    }))
+    }));
+    summarizedFaculty.sort((person1,person2)=>{
+        let nameParts1 = person1.name.split(' ');
+        let nameParts2 = person2.name.split(' ');
+        let lastName1 = nameParts1[nameParts1.length-1];
+        let lastName2 = nameParts2[nameParts2.length-1];
+        return lastName1.localeCompare(lastName2)
+    })
+    return summarizedFaculty;
 }
 export const facultyPageData:facultyPageSpecs = {
     title:`Faculty and Staff`,
