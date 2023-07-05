@@ -6,7 +6,11 @@
 .text{
     justify-content: flex-start;
     align-items: stretch;
-
+}
+.imgdiv{
+    border: 3px solid var(--primary);
+    align-items: center;
+    background-color: white;
 }
 .person-title{
     padding: 5px;
@@ -39,7 +43,6 @@ a.personLink{
 }
 
 img{
-    border: 3px solid var(--primary);
     padding: 3px;
     float: right;
     background-color: white;
